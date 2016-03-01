@@ -7,7 +7,7 @@ import (
 )
 
 func TestConferenceUnmarshall(t *testing.T) {
-	data, err := ioutil.ReadFile("testdata/meta.xml")
+	data, err := ioutil.ReadFile("testdata/conference.xml")
 	if err != nil {
 		t.Fatalf("Unable to read test data: %v", err)
 	}
