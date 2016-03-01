@@ -1,16 +1,18 @@
 package ottaconf
 
+import "fmt"
+
 type Time int
 
 func (t Time) String() string {
-	hours = int(t) / 60
-	mins = int(t) - hours*60
+	hours := int(t) / 60
+	mins := int(t) - hours*60
 	return fmt.Sprintf("%2d:%2d", hours, mins)
 }
 
-func AtoTime(str string) (Time, err) {
+func AtoTime(str string) (Time, error) {
 	var hours, mins int
-	n, err := fmt.Sscanf(str, "%2d:%2d", &hours, &mins)
+	_, err := fmt.Sscanf(str, "%2d:%2d", &hours, &mins)
 	if err != nil {
 		return Time(0), err
 	}
