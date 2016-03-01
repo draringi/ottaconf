@@ -1,9 +1,9 @@
 package ottaconf
 
 import (
+	"encoding/xml"
 	"io/ioutil"
 	"testing"
-	"encoding/xml"
 )
 
 func TestEventUnmarshal(t *testing.T) {
