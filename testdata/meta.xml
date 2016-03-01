@@ -1,0 +1,12 @@
+<conference>
+	<title>Meta-Conference</title>
+	<subtitle>The Conference with no Days!</subtitle>
+	<venue>Meta-Venue</venue>
+	<city>Ville de Meta</city>
+	<start>2016-02-29</start>
+	<end>2016-02-29</end>
+	<days>0</days>
+	<release>A</release>
+	<day_change>00:00</day_change>
+	<timeslot_duration>01:00</timeslot_duration>
+</conference>

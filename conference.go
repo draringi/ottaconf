@@ -62,16 +62,17 @@ func Parse(r io.Reader) (*Conference, error) {
 
 func (c *Conference) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var data struct {
-		Title            string
-		Subtitle         string
-		Venue            string
-		City             string
-		Start            string
-		End              string
-		Days             int
-		Release          string
-		DayChange       string
-		TimeslotDuration string
+		XMLName          xml.Name `xml:"conference"`
+		Title            string   `xml:"title"`
+		Subtitle         string   `xml:"subtitle"`
+		Venue            string   `xml:"venue"`
+		City             string   `xml:"city"`
+		Start            string   `xml:"start"`
+		End              string   `xml:"end"`
+		Days             int      `xml:"days"`
+		Release          string   `xml:"release"`
+		DayChange        string   `xml:"day_change"`
+		TimeslotDuration string   `xml:"timeslot_duration"`
 	}
 	err := d.DecodeElement(&data, &start)
 	if err != nil {

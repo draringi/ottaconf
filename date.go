@@ -14,7 +14,7 @@ type Date struct {
 }
 
 func (d Date) String() string {
-	return fmt.Sprintf("%4d-%2d-%2d", d.year, d.month, d.day)
+	return fmt.Sprintf("%0.4d-%0.2d-%0.2d", d.year, d.month, d.day)
 }
 
 func AtoDate(str string) (*Date, error) {
@@ -26,7 +26,7 @@ func AtoDate(str string) (*Date, error) {
 	n, err := fmt.Sscanf(str, "%4d-%2d-%2d", &d.year, &d.month, &d.day)
 	if err != nil {
 		return nil, err
-	} else if n != 1 {
+	} else if n != 3 {
 		return nil, errors.New("Invalid date string")
 	}
 	datemap[str] = d
