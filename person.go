@@ -19,8 +19,8 @@ func (p *Person) String() string {
 func (p *Person) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var data struct {
 		XMLName xml.Name `xml:"person"`
-		Id int `xml:"id,attr"`
-		Name string `xml:",chardata"`
+		Id      int      `xml:"id,attr"`
+		Name    string   `xml:",chardata"`
 	}
 	err := d.DecodeElement(&data, &start)
 	if err != nil {

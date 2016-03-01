@@ -1,9 +1,9 @@
 package ottaconf
 
 import (
+	"encoding/xml"
 	"io/ioutil"
 	"testing"
-	"encoding/xml"
 )
 
 func TestPersonUnmarshal(t *testing.T) {
@@ -15,7 +15,7 @@ func TestPersonUnmarshal(t *testing.T) {
 	err = xml.Unmarshal(data, &p)
 	if err != nil {
 		t.Errorf("Unable to Unmarshal: %v", err)
-                return
+		return
 	}
 	if p.id != 214 {
 		t.Errorf("Failed matching id. Expected 214, Found %d", p.id)
