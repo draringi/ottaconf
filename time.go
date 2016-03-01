@@ -7,7 +7,7 @@ type Time int
 func (t Time) String() string {
 	hours := int(t) / 60
 	mins := int(t) - hours*60
-	return fmt.Sprintf("%2d:%2d", hours, mins)
+	return fmt.Sprintf("%0.2d:%0.2d", hours, mins)
 }
 
 func AtoTime(str string) (Time, error) {

@@ -22,18 +22,19 @@ type Event struct {
 
 func (e *Event) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var data struct {
+		XMLName	xml.Name	`xml:"event"`	
 		Id          int `xml:"id,attr"`
-		Room        string
-		Start       string
-		Duration    string
-		Slug        string
-		Title       string
-		Subtitle    string
-		Track       string
-		Type        string
-		Language    string
-		Abstract    string
-		Description string
+		Room        string `xml:"room"`
+		Start       string `xml:"start"`
+		Duration    string `xml:"duration"`
+		Slug        string `xml:"slug"`
+		Title       string `xml:"title"`
+		Subtitle    string `xml:"subtitle"`
+		Track       string `xml:"track"`
+		Type        string `xml:"type"`
+		Language    string `xml:"language"`
+		Abstract    string `xml:"abstract"`
+		Description string `xml:"description"`
 		People      []*Person `xml:"persons>person"`
 		Links       []*Link   `xml:"links>link"`
 	}

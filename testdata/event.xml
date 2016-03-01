@@ -1,0 +1,22 @@
+<event id="605">
+	<start>17:00</start>
+	<duration>06:15</duration>
+	<room>Royal Oak</room>
+	<slug>goat</slug>
+	<title>Goat BOF</title>
+	<subtitle/>
+	<track>Social</track>
+	<type>other</type>
+	<language>en</language>
+	<abstract>This is a BOF.</abstract>
+	<description>About goats.</description>
+	<persons>
+		<person id="214">Allan Jude</person>
+		<person id="1">Dan Langille</person>
+		<person id="6">Michael W. Lucas</person>
+	</persons>
+	<links>
+		<link href="https://twitter.com/dlangille/status/462732293686452224">Twitter announcement</link>
+		<link href="http://goo.gl/maps/zHr2P">Google Map to Royal Oak on Laurier St</link>
+	</links>
+</event>

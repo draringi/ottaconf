@@ -1,0 +1,2030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+  <conference>
+    <title>BSDCan 2015</title>
+    <subtitle>The Technical BSD Conference</subtitle>
+    <venue>University of Ottawa</venue>
+    <city>Ottawa</city>
+    <start>2015-06-09</start>
+    <end>2015-06-14</end>
+    <days>6</days>
+    <release>ZH</release>
+    <day_change>09:00</day_change>
+    <timeslot_duration>00:15</timeslot_duration>
+  </conference>
+  <day date="2015-06-09" index="1">
+    <room name="DMS 1160">
+    </room>
+    <room name="DMS 1110">
+    </room>
+    <room name="DMS 1120">
+    </room>
+    <room name="DMS 1140">
+    </room>
+    <room name="DMS 1130 - FreeBSD Dev Track">
+    </room>
+    <room name="DMS Lobby">
+    </room>
+    <room name="Royal Oak">
+      <event id="605">
+        <start>17:00</start>
+        <duration>06:15</duration>
+        <room>Royal Oak</room>
+        <slug>goat</slug>
+        <title>Goat BOF</title>
+        <subtitle></subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>This is a BOF.</abstract>
+        <description>About goats.</description>
+        <persons>
+          <person id="214">Allan Jude</person>
+          <person id="1">Dan Langille</person>
+          <person id="6">Michael W. Lucas</person>
+        </persons>
+        <links>
+          <link href="https://twitter.com/dlangille/status/462732293686452224">Twitter announcement</link>
+          <link href="http://goo.gl/maps/zHr2P">Google Map to Royal Oak on Laurier St</link>
+        </links>
+      </event>
+    </room>
+    <room name="L140">
+    </room>
+    <room name="Key signing room">
+    </room>
+    <room name="STN 202">
+    </room>
+    <room name="DMS 3105">
+    </room>
+    <room name="Doc Sprint 2">
+    </room>
+    <room name="Lowertown Brewery">
+    </room>
+    <room name="UC 206">
+    </room>
+    <room name="DMS 4165">
+    </room>
+  </day>
+  <day date="2015-06-10" index="2">
+    <room name="DMS 1160">
+    </room>
+    <room name="DMS 1110">
+    </room>
+    <room name="DMS 1120">
+      <event id="536">
+        <start>09:00</start>
+        <duration>03:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>FreeBSD Storage for Sysadmins</title>
+        <subtitle></subtitle>
+        <track>Tutorial</track>
+        <type>workshop</type>
+        <language>en</language>
+        <abstract>This tutorial will take you through FreeBSD's storage system. You'll learn about everything from devfs to ZFS, from UFS to iSCSI.</abstract>
+        <description>This tutorial is based on some books that should be out before BSDCan.
+
+FreeBSD has many data storage features. This gives a high-level overview of how they work and how sysadmins can combine them to achieve all sorts of nifty things. Topics include:
+
+modern disk management
+UFS and FFS
+ZFS
+devfs
+tmpfs versus mfs
+snapshots (UFS and ZFS)
+iSCSI
+performance monitoring and tuning
+
+And more!</description>
+        <persons>
+          <person id="6">Michael W. Lucas</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="633">
+        <start>12:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Lunch for tutorial attendees</title>
+        <subtitle>LUNCH!</subtitle>
+        <track>Tutorial</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Private event, by invitation only.</abstract>
+        <description>FreeBSD Dev Summit</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="533">
+        <start>13:00</start>
+        <duration>03:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>PF, The OpenBSD Packet Filter: Building The Network You Need</title>
+        <subtitle></subtitle>
+        <track>Tutorial</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>This session is aimed at experienced or aspiring network administrators who want to expand their knowledge of PF, the OpenBSD packet filter, and related tools.  A basic knowledge of Unix and TCP/IP network configuration is expected and required.  
+</abstract>
+        <description>The session will provide updates on the new PF syntax and features introduced in OpenBSD 4.7 (with samples presented in the old and new syntax where appropriate), with newer updates and previews of relevant new features such as the new traffic shaping subsystem introduced in OpenBSD 5.6 and any other PF related improvements in the upcoming OpenBSD 5.7 release (planned release date May 1st, 2015). 
+
+Topics potentially covered include
+
+* Configuration on OpenBSD, FreeBSD and NetBSD
+* PF ruleset basics and rule interactions: block, pass, match
+* Writing maintainable rulesets
+* Address families: IPv4 NAT vs IPv6
+* Redirection, divert and services with odd dependencies (ftp-proxy, spamd)
+* Adaptive rulesets (state tracking tricks)
+* Traffic shaping with priorities and 'newqueue', OpenBSD 5.5 style
+* Legacy ALTQ traffic shaping
+* Per user filtering with authpf 
+* High availability with CARP, relayd 
+* Wireless vs wired networks
+* Filtering bridges
+* Logging and monitoring - pflog, pflow and others
+* Testing, debugging, and optimizing your configuration
+
+The available material (notes and slides accumulated over the years) covers significantly more than the schedule allows for. To help make the session more targeted to your needs, I would appreciate if you, when you sign up for the session or soon after, send me an email to tutorial@bsdly.net with description of what you would like to learn in this session, and to the extent you are allowed and feel it is appropriate, what your near or longer term future project is. 
+
+This session is aimed at experienced or aspiring network administrators who want to expand their knowledge of PF, the OpenBSD packet filter, and related tools.  A basic knowledge of Unix and TCP/IP network configuration is expected and required.  
+
+Slides matching the latest version of the tutorial can be found at http://home.nuug.no/~peter/pf/newest/; updated slides will be made available to the general public after the present session has concluded. 
+
+Logistics allowing, copies of the third edition of Hansteen's The Book of PF (http://www.nostarch.com/pf3) will be available to purchase at the session.</description>
+        <persons>
+          <person id="19">Peter Hansteen</person>
+        </persons>
+        <links>
+          <link href="http://home.nuug.no/~peter/pf/newest/">Latest tutorial slides (updated after each session)</link>
+          <link href="http://bsdly.blogspot.com">Peter N. N. Hansteen's blog</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1140">
+    </room>
+    <room name="DMS 1130 - FreeBSD Dev Track">
+    </room>
+    <room name="DMS Lobby">
+    </room>
+    <room name="Royal Oak">
+    </room>
+    <room name="L140">
+      <event id="602">
+        <start>20:00</start>
+        <duration>04:00</duration>
+        <room>L140</room>
+        <slug></slug>
+        <title>Hacker Lounge</title>
+        <subtitle>meet, greet, hack</subtitle>
+        <track>Hacking</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>The hacker lounge is on the ground floor of residence.  Bring your laptop, enjoy.
+
+This room is located just past the lobby.  You may need to ask for the key at the desk. </abstract>
+        <description>Proper behaviour is expected, or you'll be asked to leave.  :)  If you must ask what proper behaviour is, well, it sounds like you shouldn't be there.
+
+The starting time is flexible, so is the ending time.  Just show up.  wifi will be available.
+
+In order to play nicely with others, please bring an extension cord / power strip.
+
+Please keep this room tidy and clean.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="Key signing room">
+    </room>
+    <room name="STN 202">
+    </room>
+    <room name="DMS 3105">
+      <event id="614">
+        <start>18:00</start>
+        <duration>04:00</duration>
+        <room>DMS 3105</room>
+        <slug></slug>
+        <title>Doc Sprints</title>
+        <subtitle>Doc Sprints</subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>This doc sprint is open to both committers and anyone interested in helping to improve the documentation set (handbook, guides, man pages, website) for any of the BSD projects.</abstract>
+        <description>This doc sprint is open to both committers and anyone interested in helping to improve the documentation set (handbook, guides, man pages, website) for any of the BSD projects.
+
+FreeBSD committers will be available to assist non-committers in getting started with the FreeBSD documentation set, learning the workflow and how to make changes, and to approve and commit patches. Committers will also work on closing doc PRs and discuss proposed changes to the documentation.
+
+The current mandoc maintainer (Ingo Schwarze) will participate and can help with mandoc integration or any other aspects of mandoc you are interested in.  He can also review and commit OpenBSD patches and help participants to get started with contributing to OpenBSD.
+
+If there is interest, we can have a few ad-hoc mini-presentations. If you have anything in mind that you would like to hear about (or show), send an email to dru@freebsd.org.
+
+Feel free to drop by and help out!</description>
+        <persons>
+          <person id="10">Dru Lavigne</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="Doc Sprint 2">
+    </room>
+    <room name="Lowertown Brewery">
+    </room>
+    <room name="UC 206">
+    </room>
+    <room name="DMS 4165">
+    </room>
+  </day>
+  <day date="2015-06-11" index="3">
+    <room name="DMS 1160">
+      <event id="616">
+        <start>18:00</start>
+        <duration>04:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Doc Sprints</title>
+        <subtitle>Doc Sprints</subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>This doc sprint is open to both committers and anyone interested in helping to improve the documentation set (handbook, guides, man pages, website) for any of the BSD projects.</abstract>
+        <description>This doc sprint is open to both committers and anyone interested in helping to improve the documentation set (handbook, guides, man pages, website) for any of the BSD projects.
+
+FreeBSD committers will be available to assist non-committers in getting started with the FreeBSD documentation set, learning the workflow and how to make changes, and to approve and commit patches. Committers will also work on closing doc PRs and discuss proposed changes to the documentation.
+
+The current mandoc maintainer (Ingo Schwarze) will participate and can help with mandoc integration or any other aspects of mandoc you are interested in.  He can also review and commit OpenBSD patches and help participants to get started with contributing to OpenBSD.
+
+If there is interest, we can have a few ad-hoc mini-presentations. If you have anything in mind that you would like to hear about (or show), send an email to dru@freebsd.org.
+
+Feel free to drop by and help out!</description>
+        <persons>
+          <person id="10">Dru Lavigne</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1110">
+    </room>
+    <room name="DMS 1120">
+      <event id="584">
+        <start>09:00</start>
+        <duration>03:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>DNSSEC tutorial</title>
+        <subtitle></subtitle>
+        <track>Tutorial</track>
+        <type>workshop</type>
+        <language>en</language>
+        <abstract>Security is becoming a more important topic, as our lives become more and more digital, and the press puts continuous emphasis on personal data being stolen.  DNSSEC is a step towards a more secure experience on the internet, giving us a certain safety that the website we're browsing is the correct one.  It requires, though, an added level of configuration from system and network administrators.  This tutorial aims at making IT professionals comfortable with the technology and with its implementations.</abstract>
+        <description>After this tutorial you will:
+
+- Understand the basic concepts of DNS Security;
+- Know how to configure a DNSSEC-enabled resolver for your network;
+- Know how to configure basic DNSSEC for your domains;
+- Know how to configure reverse DNSSEC records for your networks;
+- Be familiar with DNSSEC-related tools and procedures;
+- Know how to troubleshoot basic DNSSEC problems.
+
+
+Tutorial contents:
+
+Introduction to DNS
+Introduction to cryptography
+Introduction to DNSSEC
+Configuring a DNSSEC resolver
+DNSSEC zone records
+Key management and rollover
+Securing zone transfers
+Reverse Delegations
+Distributing secure data with DNSSEC
+DNSSEC troubleshooting
+Tools
+
+
+This tutorial doesn&#8217;t cover:
+
+The basics of routing, or any technical routing topics
+How to receive IP addresses from the RIPE NCC
+How to operate a Local Internet Registry (LIR)
+The methodology:
+
+The DNSSEC tutorial is based on hands-on practical exercises and demonstrations. Throughout the day, various exercises and demonstrations will get you familiar with DNSSEC and allow you to practice your newly learned skills.
+You will receive a USB stick containing the course material and a printed version of the slides.
+Prerequisites:
+
+- Basic knowledge of the Domain Name System
+- Basic experience in managing BIND configuration and zone files
+
+The material you need to bring:
+
+Please bring your laptop. This tutorial is based on interactive exercises via a web browser. Your laptop should:
+
+- Be able to connect to a wireless network
+- Have a web browser installed
+- Have the chance to run a terminal software to remotely connect via SSH to a server</description>
+        <persons>
+          <person id="39">Massimiliano Stucchi</person>
+          <person id="109">Philip Paeps</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="634">
+        <start>12:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Lunch for tutorial attendees</title>
+        <subtitle>LUNCH!</subtitle>
+        <track>Tutorial</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Private event, by invitation only.</abstract>
+        <description>FreeBSD Dev Summit</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="595">
+        <start>13:00</start>
+        <duration>03:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Fast packet processing with the netmap framework</title>
+        <subtitle></subtitle>
+        <track>Tutorial</track>
+        <type>workshop</type>
+        <language>en</language>
+        <abstract>This tutorial targets vendors, engineers, and researchers looking for OS support for high speed NICs; efficient software packet processing techniques; high speed networking in VMs. We will show how to achieve these results using netmap.</abstract>
+        <description>Netmap is a platform-independent framework for high-speed packet I/O from userspace/kernel, similar in spirit (but with many features that make it unique) to proposals such as DPDK, PFRING-DNA, OpenOnLoad, SnabbSwitch and other vendor specific libraries. Netmap uses the same API to access physical NICs, virtual switches (the VALE software switch) or fast interprocess communication channels (netmap pipes).
+
+Unlike other solutions, netmap provides a file descriptor for synchronization (select/poll, epoll, kqueue), thus not requiring active threads to monitor the device's status.
+ 
+All netmap features are device- and OS-independent, and implemented as a single FreeBSD/Linux kernel module. Optional device driver support exploits the hardware's full capabilities (14.88 Mpps on a 10 Gbit/s NIC with a single core at less than 1 GHz). We have extensive application support: QEMU/KVM and Click have native netmap support, we recently added netmap support for bhyve, and pcap clients can access netmap without even recompiling through the netmap-enabled libpcap.</description>
+        <persons>
+          <person id="101">Luigi Rizzo</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1140">
+    </room>
+    <room name="DMS 1130 - FreeBSD Dev Track">
+    </room>
+    <room name="DMS Lobby">
+    </room>
+    <room name="Royal Oak">
+      <event id="608">
+        <start>15:00</start>
+        <duration>04:00</duration>
+        <room>Royal Oak</room>
+        <slug>register</slug>
+        <title>Registration - pub</title>
+        <subtitle>Pick up your registration pack, have a beer!</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Registration pick up</abstract>
+        <description>Avoid the line ups of the first day! Pick up your registration pack early, at the pub. Sit back. Have a drink, some food. Enjoy the company.
+
+A BSDCan tradition. :)</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+          <person id="10">Dru Lavigne</person>
+        </persons>
+        <links>
+          <link href="http://www.bsdcan.org/">The map is linked to from the home page.</link>
+        </links>
+      </event>
+    </room>
+    <room name="L140">
+      <event id="607">
+        <start>18:00</start>
+        <duration>05:00</duration>
+        <room>L140</room>
+        <slug></slug>
+        <title>Hacker Lounge</title>
+        <subtitle>embedded geek out at 7pm tonight.</subtitle>
+        <track>Hacking</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>The hacker lounge is on the ground floor of residence.  Bring your laptop, enjoy.
+
+This room is located just past the lobby.  You may need to ask for the key at the desk. </abstract>
+        <description>Proper behaviour is expected, or you'll be asked to leave.  :)  If you must ask what proper behaviour is, well, it sounds like you shouldn't be there.
+
+The starting time is flexible, so is the ending time.  Just show up.  wifi will be available.
+
+In order to play nicely with others, please bring an extension cord / power strip.
+
+Please keep this room tidy and clean.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="Key signing room">
+    </room>
+    <room name="STN 202">
+    </room>
+    <room name="DMS 3105">
+    </room>
+    <room name="Doc Sprint 2">
+    </room>
+    <room name="Lowertown Brewery">
+    </room>
+    <room name="UC 206">
+      <event id="550">
+        <start>14:00</start>
+        <duration>04:00</duration>
+        <room>UC 206</room>
+        <slug></slug>
+        <title>BSD Professional Lab Exam (beta)</title>
+        <subtitle>1st of 2 sessions</subtitle>
+        <track>Certification</track>
+        <type>workshop</type>
+        <language>en</language>
+        <abstract>The BSD Certification Group will hold two sessions for the BSD Professional Lab Exam (beta) at BSDCan 2015.  Session 1 will be on Thursday, June 11 from 2:00pm - 6:00pm. Session 2 will be on Sunday, June 14, from 10:00am - 2:00pm.  The exam consists of a hands-on set of activities for configuring BSD systems according to the BSD Professional Certification Exam Objectives (http://www.bsdcertification.org/downloads/certreq-bsdp-en.pdf).
+
+*There is a cost associated with the exam which is not part of the BSDCan registration.*  Check the BSD Certification Group Registration Site at https://register.bsdcertification.org for details.
+
+</abstract>
+        <description>The BSD Professional (BSDP) certification is an advanced level, psychometrically valid certification for BSD system administrators offered by the BSD Certification Group (BSDCG). The requirements for the BSDP examination were developed with active input from the BSD community, system administrators, and organizations that use BSD systems in their IT infrastructure.  
+
+Following on the successful launch of the beta version of the BSDP Lab Exam at BSDCan 2014, the BSDCG will provide two Lab Exam opportunities at BSDCan 2015.  Both sessions are 4 hours in length and will require the candidate to actively configure 3 BSD virtual systems according to specifications in the Lab Exam booklet.  At the conclusion of the exam, each candidate will receive a score report.
+
+For additional details and to register for the exam, please visit the BSDCG registration site at https://register.bsdcertification.org.
+
+</description>
+        <persons>
+          <person id="278">Jim Brown</person>
+        </persons>
+        <links>
+          <link href="https://register.bsdcertification.org">Registration Site (You must register to take the Exam.)</link>
+          <link href="http://www.bsdcertification.org">BSD Certification Group Website</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 4165">
+      <event id="649">
+        <start>13:15</start>
+        <duration>02:00</duration>
+        <room>DMS 4165</room>
+        <slug></slug>
+        <title>Registration pack assembly</title>
+        <subtitle>assembly, deliver, drink</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Be first to see the swag!</abstract>
+        <description>Help us to stuff the registration packs.  No assembly required. Have wonderful conversations with your co-volunteers!</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+  </day>
+  <day date="2015-06-12" index="4">
+    <room name="DMS 1160">
+      <event id="612">
+        <start>09:00</start>
+        <duration>01:15</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Keynote</title>
+        <subtitle>The opening session</subtitle>
+        <track>Plenary</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>There will be a few short announcements before and after the keynote.</abstract>
+        <description>Steve Bourne will talk about about sh/adb which he has never covered before in public. These include:
+
+* sh memory management and interfaces used to interleave heap and stack these were not C stack
+* sh has no string length or any other "arbitrary" length restrictions and what that meant for
+implementation
+* sbrk and porting grief people had (things you dont think of when you write the code)
+* my opinion of shellshock
+* tricks used and why (eg using top bit of byte as quoted string marker)
+* reasons we did all this and wouldn't do it today
+* adb interesting problem it runs on one machine is debugging another and compiled on a third
+* why i wrote it (Algol68 port) and Dennis added overlays (exec)
+* invention of environment variables and why
+* How I talked Dennis into putting 'void' into C and other C changes
+* why setjmp and longjmp are a good idea (so I could write sh)
+* why Bill Joy wrote the C shell
+</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+          <person id="301">Stephen Bourne</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="532">
+        <start>10:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Embedded FreeBSD Development and Package Building via QEMU</title>
+        <subtitle>Using QEMU bsduser tools to bootstrap jails and software for use on ARM and MIPS targets.</subtitle>
+        <track>Embedded</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Complete description of current open source toolchains and emulators used to build packages and software for use on embedded platforms.
+
+This will cover the binmiscctl(8) and imgact_binmisc(4) tools, QEMU bsduser implementations and poudriere for use in creating jail-like environments.</abstract>
+        <description>FreeBSD has grown an emulation layer that allows for cross building of packages for multiple architechtures.  This presentation will cover the techniques and design of our current implementation utilizing kernel modules, QEMU user mode, jails and poudriere to develop and build packages for ARMv6, MIPS and MIPS64 utilizing industry standard AMD64 hardware.
+
+ </description>
+        <persons>
+          <person id="97">Sean Bruno</person>
+          <person id="267">Stacey Son</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="576">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Adding AES-ICM and AES-GCM to OpenCrypto</title>
+        <subtitle></subtitle>
+        <track>Security</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Adding additional cipher modes may seem simple, but there are many things to consider.</abstract>
+        <description>Implementing the modes and ensuring security requires more than a simply coding it up.  It requires understanding of different standards and computer architecture to make sure things like side channel/timing attacks are addressed or properly understood.  Some design decisions can be made to help ensure that consumers of the interface are able to properly use it.</description>
+        <persons>
+          <person id="239">John-Mark Gurney</person>
+        </persons>
+        <links>
+          <link href="https://svnweb.freebsd.org/changeset/base/r275732">Changeset r275732</link>
+          <link href="http://freebsdfoundation.blogspot.com/2014/08/freebsd-foundation-announces-ipsec.html">FreeBSD Foundation Announcement</link>
+        </links>
+      </event>
+      <event id="590">
+        <start>12:30</start>
+        <duration>00:45</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>bhyve BoF</title>
+        <subtitle></subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>Pick up your lunch and then join this BOF.
+
+Bhyve users meet and discuss how they are using bhyve, what the pain points are, what tools they find are missing, etc.</abstract>
+        <description>Collect further points that require documentation</description>
+        <persons>
+          <person id="214">Allan Jude</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="528">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Measure Twice, Code Once</title>
+        <subtitle>Network Performance Analysis for FreeBSD</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>The networking subsystems of any operating system have grown in complexity as the set of protocols and features supported has grown since the birth of the Internet. Firewalls, Virtual Private Networking, and IPv6 are just a few of the features present in the FreeBSD kernel that were not even envisioned when the original BSD releases were developed over 30 years ago. Advances in networking hardware, with 10Gbps NIC cards being available for only a few hundred dollars, have far outstripped the speeds for which the kernel&#8217;s network software was originally written. As with the increasing speed of processors over the last 30 years, systems developers and integrators have always depended on the next generation of hardware to solve the current generation&#8217;s performance bottlenecks, often without resorting to any coherent form of measurement. Our paper shows developers and systems integrators at all proficiency levels how to benchmark networking systems, with specific examples drawn from our experiences with the FreeBSD kernel. Common pitfalls are called out and addressed and a set of representative tests are given. A secondary outcome of this work is a simple system for network test coordination, Conductor, which is also described.</abstract>
+        <description>The technical challenges in developing a benchmark aren&#8217;t limited to avoiding lying to the reader. Figuring out how to measure something reliably and repeatably in a dynamic system requires a deep understanding of all of the system components and how interactions among them can conspire to create false measurements. A non-networked system, where the interconnections and interactions among the various components are, or should be, visible, is still complex enough to trip up many developers. A networked system is far harder to measure for sev- eral reasons, including: asynchrony, visibility and the lack of well synchronized clocks.
+
+In this talk we will present our experiences measuring various components of the FreeBSD subsystems, including generic forwarding, as well as both of the commonly used firewalls (IPFW and PF).  We present not only our measurements but the lessons learned in finding the right measurements and how to reliably reproduce our results. Common pitfalls are called out and addressed and a set of representative tests are given. A secondary outcome of this work is a simple system for network test coordination, Conductor, which is also described. The Conductor system, as well as all the tests and results are published, in parallel, in two open source projects given on the Links section of this event.</description>
+        <persons>
+          <person id="20">George Neville-Neil</person>
+          <person id="296">Jim Thompson</person>
+        </persons>
+        <links>
+          <link href="http://github.com/gvnn3/netperf">Netperf Project</link>
+          <link href="http://github.com/gvnn3/conductor">Conductor Tool</link>
+        </links>
+      </event>
+      <event id="586">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Expanding RDMA (Remote Direct Memory Access) capability over Ethernet in FreeBSD</title>
+        <subtitle>Introducing a new way to enable high-speed data transfers over an Ethernet network with minimal CPU involvement</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>RDMA (Remote Direct Memory Access) is growing in popularity in Linux and Windows systems as a way to transfer large amounts of data with low latency and minimal involvement from the CPU. However RDMA InfiniBand drivers in FreeBSD were not updated, requiring users to create or port their own implementation of RDMA, and RDMA over Ethernet was not available in FreeBSD. This talk will describe how RDMA works and review the new addition of RoCE (RDMA over Converged Ethernet) network drivers in FreeBSD, allowing easier implementation of rapid data transfers with low CPU utilization over Ethernet and InfiniBand. This also enables the use of iSCSI over RDMA via the iSER (iSCSI Extensions for RDMA) protocol. </abstract>
+        <description>One of InfiniBand&#8217;s valuable capabilities is its support for RDMA (Remote Direct Memory Access) operations across a network, which enable rapid data transfer without involvement of the host CPU in the data path, and data placement to the responder memory without requiring its CPU awareness.
+
+RoCE (RDMA over Converged Ethernet) is a standard for RDMA over Ethernet.
+
+It provides true RDMA semantics for Ethernet and allows InfiniBand transport applications to work over an Ethernet network.
+
+FreeBSD is frequently used for storage purposes and RDMA capability has a high potential of improving performance in such storage applications.
+
+A good example for that is iSER (iSCSI Extensions for RDMA), a module being developed nowadays for FreeBSD, which enables the use of iSCSI over RoCE. 
+
+The main idea of this talk is a short overview of RDMA &#8211; Its principles, key components and its main advantages.  Additionally, it will cover the use of RoCE - implementation architecture, obstacles we overcame in the development, and a quick browse of RoCE&#8217;s different capabilities and milestones.
+</description>
+        <persons>
+          <person id="291">Shany Michaely</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="591">
+        <start>16:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Protecting FreeBSD with Secure Virtual Architecture</title>
+        <subtitle></subtitle>
+        <track>Security</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>In this talk, I will present our research on protecting FreeBSD applications and the FreeBSD kernel from attacks.  I will briefly describe the KCoFI system which protects the FreeBSD kernel from control-flow hijack attacks (such as classic buffer overflow attacks) and the Virtual Ghost system which protects applications from a compromised operating system kernel.  Both KCoFI and Virtual Ghost are built using the Secure Virtual Architecture (SVA) (an LLVM-based infrastructure for enforcing security policies through compiler instrumentation and hardware techniques).  SVA, KCoFI, and Virtual Ghost are available as open-source software at https://github.com/jtcriswell/SVA.</abstract>
+        <description>In this talk, I will present our work on using the Secure Virtual Architecture (SVA) to protect FreeBSD applications and the FreeBSD kernel from security attacks.  SVA is an LLVM-based infrastructure that permits us to use compiler instrumentation techniques to enforce security policies on both application and kernel code.  In this talk, I will briefly describe how we used SVA to implement KCoFI: a system that enforces control-flow integrity and code segment integrity on the FreeBSD kernel to protect it from control-flow hijack attacks.  I will then describe how we extended KCoFI to build Virtual Ghost.  Virtual Ghost protects applications from a compromised operating system kernel.  I will describe how Virtual Ghost uses compiler instrumentation to prevent the FreeBSD kernel from spying on and corrupting private application data and how it prevents the kernel from maliciously modifying application control flow (while still supporting features such as signal handlers and process creation).
+</description>
+        <persons>
+          <person id="290">John Criswell</person>
+        </persons>
+        <links>
+          <link href="http://sva.cs.illinois.edu/pubs/KCoFI-Oakland-2014.pdf">Link to KCoFI Paper</link>
+          <link href="http://sva.cs.illinois.edu/pubs/VirtualGhost-ASPLOS-2014.pdf">Link to Virtual Ghost Paper</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1110">
+      <event id="545">
+        <start>10:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>signify: Securing OpenBSD From Us To You</title>
+        <subtitle></subtitle>
+        <track>Security</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>OpenBSD introduced the signify tool to cryptographically sign and verify releases one year ago.</abstract>
+        <description> I'll talk about the design and implementation of the tool, how the OpenBSD project uses it, the necessary changes to the release process to incorporate signify, and other lessons learned in the past year.</description>
+        <persons>
+          <person id="276">Ted Unangst</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=9R5s3l-0wh0&amp;index=7&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f">video</link>
+          <link href="http://www.openbsd.org/papers/bsdcan-signify.html">slides</link>
+        </links>
+      </event>
+      <event id="573">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>Virtualization has come to the ARM world!</title>
+        <subtitle>How to port your BSD to run as a Xen on ARM guest</subtitle>
+        <track>Embedded</track>
+        <type></type>
+        <language>en</language>
+        <abstract>Xen recently added support for the ARMv7 and ARMv8 platforms, including the Arndale Board, Cubieboard, X-Gene, AMD Seattle and others.
+
+With the new Xen architecture for ARM, porting your BSD OS as a guest is a painless and a straight forward process. It will allow you to partition your ARM hardware and run virtual ARM server instances which brings you
+numerous benefits, including isolation, hardware independence, migration, and more.
+
+In this session we will focus on the requirements and necessary actions for porting from scratch an OS to run under Xen on ARM. We will also investigate how Xen provides you debugging features to help you in the porting effort.
+
+Finally, we will share our experiences porting FreeBSD to run as Xen ARM guest.</abstract>
+        <description>This talks will cover the following points:
+        - Xen ARM architecture
+        - Prerequisites to boot an OS as Xen guest
+        - Facilities provided by Xen to debug the kernel
+        - Changes made in FreeBSD
+        - Demo of FreeBSD running on Xen ARM</description>
+        <persons>
+          <person id="280">Julien Grall</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="587">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>a stitch in time: jhbuild</title>
+        <subtitle>staying on top of portability before it becomes a problem</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>BSD porters have always struggled with portability of software written by Linux users and never tested elsewhere.  GNOME has been particularly difficult.  New releases would come with new headaches, every six months.  By the time the issues were addressed and fixed upstream, a new release would be out with new issues.
+</abstract>
+        <description>In 2014, the FreeBSD GNOME Project changed their approach.  jhbuild is now building the full GNOME stack on FreeBSD systems, at least twice daily, directly out of upstream git master.  When portability issues creep in, they are addressed immediately &#8212; often with patches going upstream the same day.  When it comes time to build ports from release tarballs, there are no surprises.  A direct result of this effort has been two on-time releases of GNOME (3.12 and 3.14) in FreeBSD and GNOME 3 finally landing in the official ports collection.
+
+This talk will discuss what was done and how it changed the relationship of the FreeBSD and GNOME projects as well as discussing important issues going forward.</description>
+        <persons>
+          <person id="294">Ryan Lortie</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=YSVFnM3_2Ik&amp;index=6&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f">video</link>
+        </links>
+      </event>
+      <event id="589">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>Molecular Evolution, Genomic Analysis and FreeBSD</title>
+        <subtitle></subtitle>
+        <track>System Administration</track>
+        <type></type>
+        <language>en</language>
+        <abstract>The Bielawski group at Dalhousie University is focused on molecular evolution, phylogenetics and genomics. At the moment, the research is entirely computational, involving model development, simulation, and analysis of real genetic data. Since 2009 we have used FreeBSD almost exclusively for our work.</abstract>
+        <description>We use our FreeBSD-based cluster for 1) running computationally demanding models of molecular evolution and genomic analysis and 2) storage of genetic sequence data.  In this talk I will introduce you to the type of work we do and describe how FreeBSD meets the challenges.</description>
+        <persons>
+          <person id="273">Joseph Mingrone</person>
+        </persons>
+        <links>
+          <link href="http://awarnach.mathstat.dal.ca/dokuwiki/doku.php?id=home">Group Homepage</link>
+          <link href="https://www.youtube.com/watch?v=K2pnf1YcMTY&amp;index=1&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f">video</link>
+        </links>
+      </event>
+      <event id="555">
+        <start>16:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>Large-scale plug&amp;play x86 network appliance deployment over Internet</title>
+        <subtitle>An example of nanobsd, openvpn and ansible integration</subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Presenting a project for large-scale and plug&amp;play network appliance deployment.
+</abstract>
+        <description>How a lazy network administration do for building, deploying and manage thousand of network appliances all over the world ?
+
+This talk presents an example of solution combining FreeBSD, OpenVPN and Ansible for answering to this question. 
+
+Starting from the initial needs of providing:
+
+- multi-role network appliances: VPN Router, Wifi Access Point, Captive Portal, Firewalls, etc&#8230; 
+- to all our offices: Worldwide and over Internet
+- by simplifying at maximum their deployment: Plug &amp; play appliance
+- and reducing at maximum management tasks: Centralized and configuration template driven.
+
+It will present the technical choices, design and problems encountered.</description>
+        <persons>
+          <person id="11">Olivier Cochard-Labb&#233;</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=6jhSvdnu4k0&amp;index=2&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f">video</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1120">
+      <event id="596">
+        <start>10:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Even faster VM networking with virtual passthrough</title>
+        <subtitle>(authors: Stefano Garzarella, Giuseppe Lettieri, Luigi Rizzo)</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>In past years, we have shown how to achieve very high networking speeds in bare metal and VMs using the netmap framework: embarrassingly high packet rates on bare metal, comfortably good on VMs through conventional device emulation techniques.</abstract>
+        <description>In this talk we show how to fill the speed gap between HW and VMs with a non conventional use of netmap, namely virtual passthrough. In this mode of operation, the guest VM uses directly the host's netmap port (thus saving extra data copies), while notifications are dispatched efficiently between guest and host.
+
+Thanks to this technique we can achieve communication speeds between untrusted guests in the order of 20 Mpps, and reach 50 Mpps between trusted guests across netmap pipes.
+
+
+
+
+</description>
+        <persons>
+          <person id="297">Giuseppe Lettieri</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=Lo6wDCapo4k&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=11">video</link>
+        </links>
+      </event>
+      <event id="597">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>A reimplementation of NetBSD using a MicroKernel</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type></type>
+        <language>en</language>
+        <abstract>Based on the MINIX 3 microkernel, we have constructed a system that to the user looks a great deal like NetBSD. It uses pkgsrc, NetBSD headers and libraries, and passes over 80% of the KYUA tests). However, inside, the system is completely different. At the bottom is a small (about 13,000 lines of code) microkernel that handles interrupts, message passing, low-level scheduling, and hardware related details. Nearly all of the actual operating system, including memory management, the file system(s), paging, and all the device drivers run as user-mode processes protected by the MMU. As a consequence, failures or security issues in one component cannot spread to other ones. In some cases a failed component can be replaced automatically and on the fly, while the system is running, and without user processes noticing it. The talk will discuss the history, goals, technology, and status of the project.</abstract>
+        <description>Research at the Vrije Universiteit has resulted in a reimplementation of NetBSD using a microkernel instead of the traditional monolithic kernel. To the user, the system looks a great deal like NetBSD (it passes over 80% of the KYUA tests). However, inside, the system is completely different. At the bottom is a small (about 13,000 lines of code) microkernel that handles interrupts, message passing, low-level scheduling, and hardware related details. Nearly all of the actual operating system, including memory management, the file system(s), paging, and all the device drivers run as user-mode processes protected by the MMU. As a consequence, failures or security issues in one component cannot spread to other ones. In some cases a failed component can be replaced automatically and on the fly, while the system is running.
+
+The latest work has been adding live update, making it possible to upgrade to a new version of the operating system ***WITHOUT*** a reboot and without running processes even noticing. No other operating system can do this.
+
+The system is built on MINIX 3, a derivative of the original MINIX system, which was intended for education. However, after the original author, Andrew Tanenbaum, received a 2 million euro grant from the Royal Netherlands Academy of Arts and Sciences and a 2.5 million euro grant from the European Research Council, the focus changed to building a highly reliable, secure, fault tolerant operating system, with an emphasis on embedded systems. The code is open source and can be downloaded from www.minix3.org. It runs on the x86 and ARM Cortex V8 (e.g., BeagleBones). Since 2007, the Website has been visited over 3 million times and the bootable image file has been downloaded over 600,000 times. The talk will discuss the history, goals, technology, and status of the project.
+</description>
+        <persons>
+          <person id="258">Andy Tanenbaum</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=0pebP891V0c&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=9">video - 1/2</link>
+          <link href="https://www.youtube.com/watch?v=Bu1JuwVfYTc&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=22">video - 2/2</link>
+          <link href="http://www.bsdcan.org/2015/audio/NetBSDMicroKernel-1.mp3">audio - 1/2</link>
+          <link href="http://www.bsdcan.org/2015/audio/NetBSDMicroKernel-2.mp3">audio - 2/2</link>
+        </links>
+      </event>
+      <event id="620">
+        <start>12:30</start>
+        <duration>00:45</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>MetaBoF</title>
+        <subtitle>MetaBUG Get Together and Discussion on BSD User Groups</subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>MetaBUG (http://www.metabug.org/about-metabug) is a Global BSD User Group that provides a place for BSD enthusiasts to come together when they themselves do not have a local BUG. </abstract>
+        <description>The goal of this BoF is to bring together people who make up the MetaBUG to discuss BSD User Groups and how to promote the use of the various BSD projects. </description>
+        <persons>
+          <person id="299">Michael Shirk</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="585">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>CheriBSD: A research fork of FreeBSD</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>CheriBSD is a fork of FreeBSD to support the [CHERI](http://www.cl.cam.ac.uk/research/security/ctsrd/cheri/) research CPU.  We have extended the kernel to provide support for CHERI memory capabilities as well as modifying applications and libraries including tcpdump, libmagic, and libz to take advantage of these capabilities for improved memory safety and compartmentalization.  We have also developed custom demo applications and deployment infrastructure for our table demo platform.  In this talk I will discuss the challenges facing a long running, public fork of FreeBSD.</abstract>
+        <description>The challenges I discuss will include keeping up with current, our migration from Perforce to Git  and the difficulty--and value--of upstreaming improvements.  I will also cover our internal and external release process and the products we produce.  CheriBSD targets a research environment, but lessons learned will apply to many environments building products or services on customized versions of FreeBSD.</description>
+        <persons>
+          <person id="272">Brooks Davis</person>
+        </persons>
+        <links>
+          <link href="http://www.cl.cam.ac.uk/research/security/ctsrd/cheri/">Capability Hardware Enhanced RISC Instructions (CHERI)</link>
+          <link href="https://www.youtube.com/watch?v=DwCg-51vFAs&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=10">video</link>
+        </links>
+      </event>
+      <event id="567">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>The LLDB Debugger in FreeBSD</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>LLDB is a modern, high-performance debugger in the LLVM family of projects, and is built as a modular and reusable set of components on top of the Clang/LLVM foundation. </abstract>
+        <description>Originally developed for Mac OS X, it now also supports FreeBSD and Linux with ongoing work towards Windows support. This talk will provide an overview of the design of LLDB, compare it with the existing GNU debugger in the FreeBSD base system, and present the path to importing LLDB as FreeBSD&#8217;s debugger.</description>
+        <persons>
+          <person id="147">Ed Maste</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="549">
+        <start>16:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>FreeBSD on ARMv8</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>In 2012 ARM announced a major update to their ARM architecture, ARMv8. This was the move to include a new 64-bit instruction set in their next revision of  the architecture. ARM ported a number of open source projects to this architecture in-house, unfortunately this didn't include FreeBSD.</abstract>
+        <description>This presentation will provide an overview and history of the ARM architecture up to ARMv8. It will go over the history of porting FreeBSD to ARMv8, along  with  provide a high-level overview of porting an operating system to a new architecture. It will give a status report on the current state of FreeBSD running on ARMv8 hardware and emulators.
+
+I have been working on porting FreeBSD to ARMv8 since late 2012, and for the first two years I was working on it on my own and in my spare time. In late 2014  the FreeBSD Foundation, with the help of ARM and Cavium, started a project fund this work, and to port FreeBSD to the Cavium Thunder X hardware.</description>
+        <persons>
+          <person id="275">Andrew Turner</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="615">
+        <start>18:00</start>
+        <duration>04:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Doc Sprints</title>
+        <subtitle>Doc Sprints</subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>This doc sprint is open to both committers and anyone interested in helping to improve the documentation set (handbook, guides, man pages, website) for any of the BSD projects.</abstract>
+        <description>This doc sprint is open to both committers and anyone interested in helping to improve the documentation set (handbook, guides, man pages, website) for any of the BSD projects.
+
+FreeBSD committers will be available to assist non-committers in getting started with the FreeBSD documentation set, learning the workflow and how to make changes, and to approve and commit patches. Committers will also work on closing doc PRs and discuss proposed changes to the documentation.
+
+The current mandoc maintainer (Ingo Schwarze) will participate and can help with mandoc integration or any other aspects of mandoc you are interested in.  He can also review and commit OpenBSD patches and help participants to get started with contributing to OpenBSD.
+
+If there is interest, we can have a few ad-hoc mini-presentations. If you have anything in mind that you would like to hear about (or show), send an email to dru@freebsd.org.
+
+Feel free to drop by and help out!</description>
+        <persons>
+          <person id="10">Dru Lavigne</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1140">
+      <event id="529">
+        <start>10:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>Lumina-DE</title>
+        <subtitle>Redefining the Desktop Environment for Modern Hardware</subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>As the types of personal computers continue to increase, the traditional &#8220;desktop computer&#8221; is gradually being shifted to a smaller subset of the total systems in use. This presents a problem for open source operating systems, as the available open source graphical environments are increasingly designed for systems with powerful hardware or traditional mouse/keyboard inputs.</abstract>
+        <description>The open-source Lumina desktop environment is designed to solve these problems by meeting its goals of being a highly flexible and scalable interface that runs with relatively little hardware requirements. The project also provides a simple framework for integrating OS-specific functionality directly into the interface for ease-of-use without causing conflict with the underlying system or affecting portability. This session will take a top-level view of the Lumina desktop project, breaking it down to its components, explaining the framework and methodology, and listing the work that is still yet to be completed to achieve its goals.</description>
+        <persons>
+          <person id="263">Ken Moore</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=Qh_YK9y4_Os&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=14">video</link>
+        </links>
+      </event>
+      <event id="537">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>Feature-rich and fast SCSI target with CTL and ZFS</title>
+        <subtitle></subtitle>
+        <track>System Administration</track>
+        <type></type>
+        <language>en</language>
+        <abstract>Three years ago FreeBSD got new subsystem called CTL (CAM Target Layer), providing SCSI target device emulation at kernel level. It allowed to bring FibreChannel target support in FreeBSD to significantly new level, and later was integrated with the new iSCSI stack. </abstract>
+        <description>This talk will describe CTL internal organization, improvements done during the last year, results and perspectives. It will include overview of modern SCSI extensions, known as VMWare VAAI and Microsoft ODX, and their CTL implementation.</description>
+        <persons>
+          <person id="271">Alexander Motin</person>
+        </persons>
+        <links>
+          <link href="https://people.freebsd.org/~mav/CTL.pdf">Slides from my talk at ruBSD'2014 conference in Moscow in December 2014</link>
+          <link href="https://www.youtube.com/watch?v=lBE4BfxVDQc&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=12">video</link>
+        </links>
+      </event>
+      <event id="534">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>FreeBSD Operations at Limelight Networks</title>
+        <subtitle>An Overview of Operating at Internet Scale</subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>In this talk, we'll look at Limelight's global CDN architecture and the practice of large scale web operations with FreeBSD.  </abstract>
+        <description>We'll investigate how FreeBSD makes these tasks easier and the strategies and tools we've developed to run our operations.  We'll then look at why the engineering team chose SaltStack to further improve our operations capabilities and reduce deployment and fault handling times.  Finally, we'll finish up with an overview of metrics and monitoring at scale with Zabbix and OpenTSDB.
+
+
+Limelight Networks is one of the "Big Three" CDNs and runs its edge using FreeBSD.</description>
+        <persons>
+          <person id="268">Kevin Bowling</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=K1-ZyiY5z48&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=16">video - 2/2</link>
+          <link href="https://www.youtube.com/watch?v=4l2rlRjkGhk&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=15">video - 1/2</link>
+        </links>
+      </event>
+      <event id="600">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>Building BUGs</title>
+        <subtitle>A Broad View of the New York City *BSD User Group</subtitle>
+        <track>Social</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>The New York City *BSD Group's origins grew from a small meeting in December 2003.
+
+Since then, NYC*BUG morphed into a rough model of how to create and maintain a *BSD User Group, not to mention conducting BSDCons, providing services for the wider community while having monthly meetings that  branch out the community beyond the usual suspects. On more organizational matters, NYC*BUG continues work a certain agnosticism in relation to the individual BSD projects, while operating without a set membership and conducting no elegant democratic structures.
+
+</abstract>
+        <description>What is the method to the NYC*BUG story, which could probably be labeled a "success" after over eleven years of existence? What can a group of students in say, Irrelevant, South Dakota or Latvia, learn from our experiences?
+
+This presentation will approach those questions and more, drawing some of the larger lessons applicable to other similar open source entities.</description>
+        <persons>
+          <person id="295">Brian Callahan</person>
+          <person id="288">George Rosamond</person>
+        </persons>
+        <links>
+          <link href="http://queair.net/bugs">slides</link>
+        </links>
+      </event>
+      <event id="580">
+        <start>16:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>I/O Scheduling in CAM</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>SSD have many unique characteristics not present in spinning drives. Applications have different access patterns and desire different performance trade offs. Geom offers some scheduling facilities, but they are hampered by no visibility into the underlying device's characteristics. Scheduling I/O in CAM allows peripheral drivers to use their detailed knowledge of a drive to schedule I/Os that are optimal for the application's needs (with hints from the application)</abstract>
+        <description>Netflix operates a small fleet of Video servers for its Video Streaming service . There are two main kinds of server used in our operations. We have a storage appliance, which is used for long-tail access and filling other servers. We have a Flash appliance for serving popular titles. Our service has a certain amount of change each day, as titles change in popularity, contracts expire or come on line, etc. While our workload is read mostly, we also need to write and trim the drive from time to time. With flash drives we found any sustained write activity above a certain level lead to a sudden decrease in the read performance, reducing our effective capacity at times when this happens.  By clever scheduling, one can reduce these effects to keep read performance good, but write performance will suffer. The traditional scheduler didn't allow any efficient way to do this, short of write throttling in the application. While this does help mitigate things, when there's many threads or processes acting in parallel it can be hard for the application to coordinate everything, and the many layers between the application and the disk can interfere with even perfect coordination. Moving the throttling to the lowest layer in the system helps smooth out the bumps, as well as adapt dynamically to the changing workloads (you can write more, if you need to read less, for example).</description>
+        <persons>
+          <person id="31">Warner Losh</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1130 - FreeBSD Dev Track">
+      <event id="610">
+        <start>10:15</start>
+        <duration>05:45</duration>
+        <room>DMS 1130 - FreeBSD Dev Track</room>
+        <slug></slug>
+        <title>FreeBSD Dev Summit</title>
+        <subtitle>public track</subtitle>
+        <track>FreeBSD Developers Summit</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>This is a place holder.</abstract>
+        <description>Individual talks will be added to the schedule closer to the conference dates.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+          <link href="https://wiki.freebsd.org/201506DevSummit#line-83">List of talks and times</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS Lobby">
+      <event id="644">
+        <start>09:00</start>
+        <duration>01:00</duration>
+        <room>DMS Lobby</room>
+        <slug></slug>
+        <title>Tea, coffee, snacks from 8:30</title>
+        <subtitle>nom nom nom</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Get your lunch and head into your favourite BoF session.</abstract>
+        <description>Lots of BoFs, get in early.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="642">
+        <start>12:30</start>
+        <duration>01:00</duration>
+        <room>DMS Lobby</room>
+        <slug></slug>
+        <title>Lunch</title>
+        <subtitle>nom nom nom</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Get your lunch and head into your favourite BoF session.</abstract>
+        <description>Lots of BoFs, get in early.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="645">
+        <start>14:30</start>
+        <duration>00:30</duration>
+        <room>DMS Lobby</room>
+        <slug></slug>
+        <title>Tea, coffee, snacks</title>
+        <subtitle>nom nom nom</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Get your lunch and head into your favourite BoF session.</abstract>
+        <description>Lots of BoFs, get in early.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="Royal Oak">
+    </room>
+    <room name="L140">
+      <event id="601">
+        <start>19:00</start>
+        <duration>04:00</duration>
+        <room>L140</room>
+        <slug></slug>
+        <title>Hacker Lounge</title>
+        <subtitle>meet, greet, hack</subtitle>
+        <track>Hacking</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>The hacker lounge is on the ground floor of residence.  Bring your laptop, enjoy.
+
+This room is located just past the lobby.  You may need to ask for the key at the desk. </abstract>
+        <description>Proper behaviour is expected, or you'll be asked to leave.  :)  If you must ask what proper behaviour is, well, it sounds like you shouldn't be there.
+
+The starting time is flexible, so is the ending time.  Just show up.  wifi will be available.
+
+In order to play nicely with others, please bring an extension cord / power strip.
+
+Please keep this room tidy and clean.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="Key signing room">
+      <event id="623">
+        <start>19:00</start>
+        <duration>01:00</duration>
+        <room>Key signing room</room>
+        <slug>keysigning</slug>
+        <title>Key signing party (in the Hacking Lounge)</title>
+        <subtitle>Sign other people's keys</subtitle>
+        <track>Social</track>
+        <type>workshop</type>
+        <language>en</language>
+        <abstract>Nearly every BSDCan has had a key signing.</abstract>
+        <description>From the link:
+
+"In public-key cryptography, a key signing party is an event at which people present their public keys to others in person, who, if they are confident the key actually belongs to the person who claims it, digitally sign the certificate containing that public key and the person's name, etc."</description>
+        <persons>
+          <person id="300">Glen Barber</person>
+        </persons>
+        <links>
+          <link href="https://en.wikipedia.org/wiki/Key_signing_party">What's a key signing party?</link>
+        </links>
+      </event>
+      <event id="650">
+        <start>20:00</start>
+        <duration>01:00</duration>
+        <room>Key signing room</room>
+        <slug></slug>
+        <title>FreeBSD/EC2 BoF</title>
+        <subtitle>In hacking lounge</subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>Building AMIs and related topics</abstract>
+        <description>This is a BoF, just show up.
+
+The start time is dependent upon the finishing time of the key signing event which precedes it.</description>
+        <persons>
+          <person id="43">Colin Percival</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="STN 202">
+    </room>
+    <room name="DMS 3105">
+    </room>
+    <room name="Doc Sprint 2">
+    </room>
+    <room name="Lowertown Brewery">
+    </room>
+    <room name="UC 206">
+      <event id="609">
+        <start>12:30</start>
+        <duration>02:00</duration>
+        <room>UC 206</room>
+        <slug>bsda2</slug>
+        <title>BSDA</title>
+        <subtitle>BSD Certification</subtitle>
+        <track>Certification</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Take the BSDA certification.</abstract>
+        <description>The BSD Certification Group Inc. is a non-profit organization committed to creating and maintaining a global certification standard for system administration on BSD based operating systems.
+
+YOU MUST register and pay for this event.  See the link for details.</description>
+        <persons>
+          <person id="10">Dru Lavigne</person>
+        </persons>
+        <links>
+          <link href="https://register.bsdcertification.org/step-2-select-an-exam-event-or-testing-center">Register here</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 4165">
+    </room>
+  </day>
+  <day date="2015-06-13" index="5">
+    <room name="DMS 1160">
+      <event id="524">
+        <start>10:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>CloudABI</title>
+        <subtitle>Cloud computing meets fine-grained capabilities</subtitle>
+        <track>Security</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>CloudABI is a new runtime environment that attempts to make it easier to use UNIX-like operating systems at the core of a cloud computing platform.
+
+Instead of offering full machine virtualization (e.g., bhyve) or requiring the use of intrusive OS-level virtualization techniques (e.g., Jails), end users can simply provide a set of binaries that communicate with the operating system over a secure and compact POSIX-like interface.
+
+Advantages include ease of maintenance and increased security.</abstract>
+        <description>Over the last couple of years, we've seen the use of Capsicum increase. It's already being used to harden services like hastd and sshd, but also in interactive tools like tcpdump. CloudABI attempts to extend the scope of Capsicum by providing a light-weight POSIX-like binary interface that is purely based on the principles of Capsicum.
+
+CloudABI can be used at the core of a cloud computing service. Instead of using full machine virtualization (Xen, bhyve, KVM) or techniques that attempt to virtualize namespaces (FreeBSD Jails, Linux cgroups), CloudABI makes it possible to safely run user-provided executables with very low CPU/memory overhead, but also without any complex system configuration.
+
+Compared to other UNIX ABIs (Linux, FreeBSD, etc), CloudABI is relatively compact. The number of system calls is low (~60) and all data types and structures have been decoupled from the public C runtime environment, meaning that it is relatively straight-forward to add support for CloudABI to other operating systems. Implementations for FreeBSD and NetBSD already exist. An implementation for the Linux kernel is being worked on. This allows users of such computing platforms to run the same executables without targeting a specific operating system. There is no need to recompile.
+
+CloudABI uses Clang as its C/C++ compiler. It ships with a modern C library that is specifically designed to work in a capabilities-centric environment. Interfaces that typically tend to break when using Capsicum on FreeBSD (e.g., locales, timezones, DNS) may still operate correctly in this environment. The C library is almost entirely thread-safe and has high testing coverage.
+
+CloudABI attempts to abstract away traditional UNIX concepts that are not applicable to pure cloud computing environments, such as UNIX process credentials management (local users and groups), file system access control management and terminal handling.</description>
+        <persons>
+          <person id="256">Ed Schouten</person>
+        </persons>
+        <links>
+          <link href="https://github.com/NuxiNL/cloudlibc">cloudlibc on GitHub</link>
+        </links>
+      </event>
+      <event id="538">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>New OpenZFS features supporting remote replication</title>
+        <subtitle></subtitle>
+        <track>Invited Talks</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>OpenZFS send and receive forms the core of remote replication products, allowing incremental changes between snapshots to be serialized and transmitted to remote systems.  In the past year, we have implemented several new features and performance enhancements to ZFS send/receive, which I will describe in this talk.</abstract>
+        <description>This talk will cover:
+ - Resumable ZFS send/receive, which allows send/receive to pick up where it left off after a failed receive (e.g. due to network outage or machine reboot).
+ - ZFS receive prefetch, which is especially helpful with objects that are updated by random writes (e.g. databases or zvols/VMDKs).
+ - ZFS send &#8220;rebase&#8221;, which can send changes between arbitrary snapshots; the incremental source is not restricted to being an ancestor of the snapshot being sent.
+
+In this talk, I will cover the impact of these changes to users of ZFS send/receive, including how to integrate them into remote replication products.  I will also give an overview of how zfs send/receive works, and how these enhancements fit into the ZFS codebase.
+</description>
+        <persons>
+          <person id="242">Matt Ahrens</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="588">
+        <start>12:30</start>
+        <duration>00:45</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>OpenZFS BoF</title>
+        <subtitle></subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>OpenZFS users meet and discuss various issues and strategies. Develop a features wish list, documentation wish list, and an FAQ.</abstract>
+        <description>Collect user experiences and further document various 'gotchas' and pitfalls to avoid for new users.</description>
+        <persons>
+          <person id="214">Allan Jude</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="554">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Multipath TCP for FreeBSD</title>
+        <subtitle>An introduction to the protocol and our implementation for FreeBSD.</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Multipath TCP (MPTCP) allows multi-homed hosts to make use of multiple addresses over a single TCP connection. This talk will cover the software architecture of a FreeBSD implementation of MPTCP, as well as presenting some case studies and performance results.</abstract>
+        <description>Multipath TCP (MPTCP) was designed as an extension to TCP, allowing a multi-homed host to utilise multiple network interfaces when transferring data. MPTCP is in the process of being standardised by the IETF as RFC 6824 (http://tools.ietf.org/html/rfc6824).
+
+Supported by funding from Cisco Systems, the Centre for Advanced Internet Architectures (http://caia.swin.edu.au/newtcp/mptcp) released several patches against FreeBSD-10 (from March 2013) to add rudimentary MPTCP capabilities and code paths. More recently, the FreeBSD Foundation (http://www.FreeBSDFoundation.org/) provided funding to continue development of the MPTCP stack, building on the existing work. The stack has since then been re-designed and improved beyond the early experimental versions.
+
+In this talk I will provide an overview of the Multipath TCP (MPTCP) protocol before discussing the software design, features and performance of our FreeBSD MPTCP implementation. I will also present some basic performance testing, case studies and usage examples (showing how MPTCP reacts to different paths coming and going while connections stay active).</description>
+        <persons>
+          <person id="223">Nigel Williams</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="563">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>Packaging FreeBSD base system</title>
+        <subtitle>A rainbow bikeshed</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Use pkg(8) to distribute, install and upgrade the FreeBSD base system.
+</abstract>
+        <description>This talk will describe why packaging the base system, and what is/was need to be done to allow packaging the base system:
+- Prerequisite changes made in pkg(8) to allow handling the base particularities
+- Prerequisite changes made or needed in base build system to be able to create sane packages
+- Granularity of the packaging
+- Plans to satisfy most of our users: embedded who wants small packages, old timers who wants big fat packages, administrators who wants flexibility, developers who wants to be able to provides custom packages for large testings and all others.
+- What new possibilities/features will packaging base offer to users.</description>
+        <persons>
+          <person id="160">Baptiste Daroussin</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="525">
+        <start>16:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug></slug>
+        <title>An Introduction to the Implementation of ZFS</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Much has been documented about how to use ZFS, but little has been written about how it is implemented. </abstract>
+        <description>This talk pulls back the covers to describe the design and implementation of ZFS.  The content of this talk was developed by scouring through blog posts, tracking down unpublished papers, hours of reading through the quarter-million lines of code that implement ZFS, and endless email with the ZFS developers themselves. The result is a concise description of an elegant and powerful system.</description>
+        <persons>
+          <person id="130">Kirk McKusick</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="613">
+        <start>17:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1160</room>
+        <slug>close</slug>
+        <title>Closing session</title>
+        <subtitle>The wrap up</subtitle>
+        <track>Plenary</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>The closing</abstract>
+        <description>Fun.  Games.  Awards.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1110">
+      <event id="561">
+        <start>10:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>What happens when a dwarf and a daemon start dancing by the light of the silvery moon?</title>
+        <subtitle></subtitle>
+        <track>Embedded</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>The use of DWARF debug information to dynamically project the embedded extension language Lua&#8217;s global environment onto the NetBSD kernel&#8217;s internal state.</abstract>
+        <description>Traditionally, an embedded extension language such as Lua is only provided with limited and controlled access to its host environment.  That access being defined ahead-of-time by a set of hand-written or generated C bindings.
+
+In this presentation we will explore an alternative: the use of DWARF debug information and the in-kernel debugger, ddb, to provide scripts running on a Lua interpreter embedded in the NetBSD kernel with simple and unfetted access to the entire kernel state.
+</description>
+        <persons>
+          <person id="115">Andrew Cagney</person>
+        </persons>
+        <links>
+          <link href="http://bitbucket.org/cagney/netbsd">Git Repository on bitbucket</link>
+          <link href="https://www.youtube.com/watch?v=XDIcD4LR5HE&amp;index=4&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f">video</link>
+        </links>
+      </event>
+      <event id="599">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>Fighting Harassment with Open Source Tools</title>
+        <subtitle>Engineering a Solution for Social Problems</subtitle>
+        <track>Social</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Have you ever wished you could actually replace a troll with a very small shell script? Maybe you can. It's time to take charge and work on solving these situations from within the open source community.</abstract>
+        <description>The internet is full of trolls. We know that this always been the case, but in the past year, the harassment coming from some online communities has become international news. There have been death threats, SWAT attacks, threats of sexual violence, hacking attempts, and many other tactics used against those most vocal against the harassment.
+
+We're going to talk a little bit about issues regarding diversity. It's no surprise that most of the people being targeted are women, and it can be a difficult thing for many to understand precisely what this harassment looks like. I'm going to show examples of what I personally have dealt with after releasing my open source project to combat harassment. The question is often raised as to why there aren't more women in open source. To answer that, everyone needs to be aware of what a female open source developer can face. Warning: there will be some graphic language.
+
+Law enforcement doesn't have an adequate way of handling online harassment. The sites being used as a method of communication don't have an adequate way of handling online harassment. Terms of Service are created not to protect the users, but to protect the interest of the companies that wrote them.
+
+However, not all is lost. With open APIs, we can work at creating safer spaces for those being targeted. I'll discuss the initial release of ggautoblocker, the problem it solved, and the roadmap for development going forward. There are many other tools that are needed. There are many ways to contribute to helping mitigate this problem. 
+
+This is a new approach to an old problem, and a lot of commercial companies are already looking at ways to sell a solution. The ability to be safe should be open to all and not come at a price.</description>
+        <persons>
+          <person id="104">Randi Harper</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=KtV_SfSvRpU&amp;index=5&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f">video</link>
+        </links>
+      </event>
+      <event id="544">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>Using routing domains / routing tables in a production network</title>
+        <subtitle></subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>OpenBSD has supported routing domains (aka VRF-lite) since 4.6, released in 2009.  In 2014, OpenBSD 5.5 gained support for IPv6 routing domains.</abstract>
+        <description>At its most basic, routing domains are simply multiple routing tables in the same kernel. While seeming like a simple task, there are many gotchas involved in using routing domains in a production network. This talk will give a brief history, as well as some scenarios for why and how you would use routing domains, while describing several of the issues that came up during the initial deployments.  Routing domains allows (for example) an airport to radically simplify their physical network configuration, saving costs and configuration overhead.  A small demonstration network will be used to illustrate common and uncommon use cases.</description>
+        <persons>
+          <person id="235">Peter Hessler</person>
+        </persons>
+        <links>
+          <link href="http://www.openbsd.org/papers/bsdcan2015-rdomains.pdf">Slides</link>
+          <link href="https://www.youtube.com/watch?v=BizrC8Zr-YY&amp;index=3&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f">video</link>
+        </links>
+      </event>
+      <event id="558">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>FreeBSD Virtualization Options</title>
+        <subtitle>New Developments from bhyve to Xen</subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Learn about the latest developments in FreeBSD virtualization including EC2 and Hyper-V guest support, Xen Dom0 and DomU support and bhyve, the native FreeBSD Hypervisor.
+</abstract>
+        <description>Learn about the latest developments in FreeBSD virtualization including EC2 and Hyper-V guest support, Xen Dom0 and DomU support and bhyve, the native FreeBSD Hypervisor.
+
+FreeBSD invented the modern Unix container with jail(8) in the year 2000 and today operates as an EC2 and Hyper-V guest, Xen Dom0 and DomU and now includes bhyve, the native FreeBSD Hypervisor. Michael wrote his first jail(8) management system in 2005 and has since operated NetBSD/Xen in production and was the first community user of bhyve, the FreeBSD hypervisor introduced with FreeBSD 10.0. bhyve is a modern, emulation-free hypervisor that relies on the Extended Page Table feature found in modern Intel and AMD CPUs. bhyve provides bare-metal performance for Unix virtual machines and an in some cases will in fact provide better than bare-metal performance.
+
+FreeBSD Xen Dom0 support has been many years in the making but is beginning to see the light of day. Michael is working with Xen developer Roger Pau Monn&#233; and aims to have a real-world report on the status of this unique effort.
+
+Combined, these technologies are establishing FreeBSD as an emerging first class virtualization platform with an increasing adoption by "cloud" service providers.</description>
+        <persons>
+          <person id="175">Michael Dexter</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="556">
+        <start>16:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1110</room>
+        <slug></slug>
+        <title>Adventures in building open source software</title>
+        <subtitle>A year of tinkering with pkgsrc and others</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>As a pkgsrc developer ensuring a tree of previously added software builds correctly across various systems / architectures and as a "developer?" taking an existing project &amp; applying the methodologies learnt from the *BSD project developers to improve the code base.
+
+Covering two angles of one problem (software) embarked on someone who is new to it.</abstract>
+        <description>Almost a year ago I began to revive Darwin/PowerPC support in pkgsrc to allow up to date packages be build on PowerPC based mac's, at the start it was possible to build less than 8500 packages from the tree on OS X Tiger/PowerPC, sevan.mit.edu is about to exceed 11,427 published 32bit packages for the Darwin/x86 (Figures taken from 2014Q3 bulkbuild by Joyent http://pkgsrc.joyent.com). This talk will some the issues which needed to be tackled &amp; what's yet to come over the next few months to attempt to build as many of the 15000 possible packages available from pkgsrc on this architecture along with expanding the effort to building to 10 different operating systems across 5 architectures.
+
+For the programming angle, discuss my work to clear up the coova-chili code base to use the facilities the operating system provides, introduce functionality from the OpenBSD (e.g. strlcpy) and testing building across the BSD's to improve the codebase.
+</description>
+        <persons>
+          <person id="265">Sevan Janiyan</person>
+        </persons>
+        <links>
+          <link href="https://www.geeklan.co.uk">Technical Blog</link>
+          <link href="http://www.sevanjaniyan.co.uk">Home Page</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1120">
+      <event id="566">
+        <start>10:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Cambridge L41: Teaching Advanced Operating Systems with FreeBSD</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Teaching about operating systems in universities is a tricky business. Some universities teach by having students hack on toy operating systems, and instructors are left feeling like they taught with a toy. Others have students hack on the real thing, and no one knows if the students will survive the course -- one bad kernel concurrency bug and the even seasoned kernel hackers run into trouble. </abstract>
+        <description>The University of Cambridge's "L41" graduate-level OS course takes a different tactic: teach with a real operating system, but have students use tracing and performance analysis tools to learn about the internals and dynamics of the kernel. More experienced students can hack the kernel if they like, but every student learns about the hardware-software interface, process models, and the network stack. We'll talk about the teaching platform (BeagleBone Black + FreeBSD), the methodology (hardware performance counters, DTrace, and performance analysis), what worked, what didn't, and how you could teach this course too.</description>
+        <persons>
+          <person id="20">George Neville-Neil</person>
+          <person id="33">Robert Watson</person>
+        </persons>
+        <links>
+          <link href="http://www.cl.cam.ac.uk/teaching/1415/L41/">Link for Cambridge's L41 course</link>
+        </links>
+      </event>
+      <event id="539">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>UCL for FreeBSD</title>
+        <subtitle>Universal Configuration Files</subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Most system administrators no longer edit the majority of configuration files by hand, they use automation and configuration management tools like puppet, saltstack, ansible, and the like. Many utilities and daemons in the FreeBSD base system use their own custom configuration file format. While these various different formats are usually accompanied by man pages, they do not lend themselves to automation or programmatic editing. Space and tab delimited files make it harder to extract a specific value, and difficult to edit that value in place, whereas nested key-value pairs are easier to read, and are easily addressed using libUCLs dotted notation. To solve this, I propose teaching the various utilities and daemons in the FreeBSD base system to speak UCL &#8211; the Universal Config Language, as implemented by libucl. In addition, I propose adding two small tools to the base system to make the administration of such config files easier for humans and automated scripts.</abstract>
+        <description>As the deployment of servers and applications becomes more transient, the practices of system administrators have needed to adapt to be more agile. UCL (Universal Config Language) is an effort to define a modern configuration syntax and implement a library to parse it, that can be reused by many different applications to simplify administration. Inspired by the NGINX and bind syntax, with elements borrowed from JSON, UCL strives to strike a balance between human writability, machine readability, and compatibility with existing formats. libUCL can read UCL, JSON, and YAML, parse them into objects that can be read or manipulated, then emit the resulting objects back out in any of the three formats.
+
+Goal: Convert these config files to UCL:
+* newsyslog
+* crontab
+* iscsi / ctld
+* autofs
+* freebsd-update
+* portsnap
+* jail.conf (need support for variables like ${host.hostname} in path, has keys with dots in them)
+* devd.conf (syntax doesn&#8217;t match well, will need work)
+</description>
+        <persons>
+          <person id="214">Allan Jude</person>
+        </persons>
+        <links>
+          <link href="https://wiki.freebsd.org/201506DevSummit/UCL">UCL DevSummit Wiki page</link>
+          <link href="https://www.youtube.com/watch?v=8l6bhKIDecg&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=8">slides</link>
+        </links>
+      </event>
+      <event id="624">
+        <start>12:30</start>
+        <duration>00:45</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>BSDs and Privacy Technologies</title>
+        <subtitle>BoF</subtitle>
+        <track>BOF</track>
+        <type>meeting</type>
+        <language>en</language>
+        <abstract>This BoF will open a discussion about *BSD usage with various privacy technologies, with a particular focus on Tor, the public anonymity network. NYC*BUG initiated a Tor-BSD list a while back, and now "The Tor BSD Diversity Project" (torbsd.github.io) was launched seeking to do a number of things, such as porting the Tor Browser to OpenBSD. Additionally, there is now a BSD BuildBot (81.7.14.172). All these activities work towards diversifying the operating systems engaged with the privacy scene, as there is an overwhelming Linux monoculture.
+</abstract>
+        <description>Come join a discussion about what you are doing or what you would like to do, and let's talk about increasing *BSD usage.</description>
+        <persons>
+          <person id="288">George Rosamond</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="527">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Unifying jail and package management for PC-BSD, FreeNAS and FreeBSD.</title>
+        <subtitle>Browser-based package and jail management</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Historically the PC-BSD project has had easy-to-use, powerful GUI utilities for package and jail management. However, being X11/Qt applications, this made their usefulness limited only to workstations, or other systems running a graphical environment, not particularly well suited for FreeNAS or a traditional FreeBSD server. With the rise of web-browser driven system management, it was also time for PC-BSD to begin converting some of its more popular tools into web-manageable forms. </abstract>
+        <description>Over the summer of 2014, a new project was started to re-create the AppCafe, a pkgng front-end, and the Warden, a jail manager, into web-accessible utilities for inclusion into both PC-BSD and FreeNAS. This front-end allows remote management of jails and packages on the upcoming FreeNAS 10, as well as system package management on FreeBSD and PC-BSD. This talk will provide a high-level overview of the functionality of the new AppCafe / Warden, along with technical details about the implementation for developers. </description>
+        <persons>
+          <person id="79">Kris Moore</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="559">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>Extensions to FreeBSD Datacenter TCP for Incremental Deployment Support</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Datacenter TCP (DCTCP) achieves low latencies for short flows while maintaining high throughputs for concurrent bulk transfers, but requires changes to both endpoints, which presents a deployment challenge. This presentation introduces extensions to DCTCP that enables one-sided deployment when peers implement standard TCP/ECN functionality.</abstract>
+        <description>This makes DCTCP significantly easier to deploy incrementally. We also improve DCTCP in two-sided deployments by refining ECN processing and the calculation of the congestion estimate. 
+
+A FreeBSD kernel implementation of these DCTCP improvements demonstrates better performance than the original DCTCP variant, and validates that incremental one-sided deployments see benefits similar to those previously only achievable in two-sided deployments.</description>
+        <persons>
+          <person id="259">Midori Kato</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="594">
+        <start>16:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1120</room>
+        <slug></slug>
+        <title>mandoc: becoming the main BSD manual toolbox</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Since my talk at BSDCan 2014, FreeBSD and illumos (formerly OpenSolaris) have switched to use mandoc as the default manual page formatter, and the scope of the mandoc toolbox has also expanded with respect to
+functionality:  OpenBSD now uses it as a replacement for the traditional BSD implementations of the offline and online manual viewers man(1) and man.cgi(8), and there are significant improvements to eqn(7) and UTF-8
+support.</abstract>
+        <description>The talk will present an overview of several topics:
+
+ * What needed to be done to replace man(1) and man.cgi(8) in OpenBSD, what the advantages are, and what the price is;
+ * how the new eqn(7) MathML output works and in which respects the newly improved eqn(7) terminal output is now better than in groff(1);
+ * how the new transparent UTF-8 input and output works without requiring the user to specify any options;
+ * which types of errors were found by Jonathan Gray with the American Fuzzy Lop (afl), and what lessons are to be learned from that work;
+ * how the new -Wunsupp option is going to simplify porting of software   and improve manual page formatting quality in FreeBSD ports;
+ * what Anthony Bentley did with pod2mdoc(1) on LibreSSL documentation,   and which future possibilities exist in the vicinity;
+ * which operating systems now use mandoc, what the recommended next   steps are for these systems, and in which directions i'm planning   to continue mandoc development.</description>
+        <persons>
+          <person id="146">Ingo Schwarze</person>
+        </persons>
+        <links>
+          <link href="http://mdocml.bsd.lv/">the portable mandoc website</link>
+          <link href="http://www.bsdcan.org/2015/audio/mandoc.mp3">audio</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1140">
+      <event id="560">
+        <start>10:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>PCI SR-IOV on FreeBSD</title>
+        <subtitle>Hardware-assisted virtualization of PCI devices</subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>PCI Single Root I/O Virtualization (SR-IOV) is an optional part of the PCIe standard that provides hardware acceleration for the virtualization of PCIe devices. When SR-IOV is in use, a function in a PCI device (known as a Physical Function, or PF) will present multiple Virtual PCI Functions (VF) on the PCI bus. These VFs are fully independent PCI devices that can use the functionality of the PF without the overhead of synchronizing with the driver for the PF or other VFs.  SR-IOV allows for great improvements in network performance in virtualized environments compared to traditional software-only network virtualization.</abstract>
+        <description>SR-IOV is an important virtualization technology supported in a number of hypervisors.  Although FreeBSD has long had support for acting as a guest OS in an SR-IOV environment, to date it has not been possible to use SR-IOV in combination with native virtualization technologies like vimage jails or bhyve.  
+
+This talk will cover the new SR-IOV infrastructure added to FreeBSD PCI subsystem, which allows the use of FreeBSD as an SR-IOV host.  Discussion will focus on the use of SR-IOV by system administrators, with the balance of the talk devoted to the kernel API provided to PF driver maintainers.</description>
+        <persons>
+          <person id="281">Ryan Stone</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="575">
+        <start>11:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title> Networking with OpenBSD in a virtualized environment</title>
+        <subtitle></subtitle>
+        <track>System Administration</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Virtualized systems running on hypervisors such as bhyve, ESXi, Xen, etc are increasingly important in the datacenter.  With a long history of stable regular releases, security, and networking performance OpenBSD is very well suited to take advantage of virtualization and to help improve the state of the art. 
+
+This presentation will explore why OpenBSD is well suited to deploying as virtual network devices on the various hypervisors and present practical examples of using OpenBSD for production networking in a virtual system. I will discuss what tools are in base, what tools are easily installable from ports/packages, current automation and management tools, and how to use them effectively using specific real world examples from large data center networks.    
+</abstract>
+        <description>Will present examples and methods for using OpenBSD to build routers, firewalls, and loadbalancers running on the various hypervisors. Will talk about methods for automating deployment, configuration, and integration with existing vendors. Will also address possible future applications in switching. Will discuss how to use the tools in OpenBSD to run a better and faster network with fewer problems and how virtualization can be part of that. 
+
+In addition to the above I will discuss why the OpenBSD community in particular should care about virtualization and work to improve the state of engineering there. </description>
+        <persons>
+          <person id="285">Ray Percival</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=gx5FILdSp2w&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=17">video</link>
+        </links>
+      </event>
+      <event id="568">
+        <start>13:30</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>FreeBSD for High Density Servers</title>
+        <subtitle>Hw to setup and control for Avoton based 5,000+ cores MicroModularServer&#8212;</subtitle>
+        <track>System Administration</track>
+        <type></type>
+        <language>en</language>
+        <abstract>To promote FreeBSD to High Performance Computing or High Density Servers under such circumstances, it is considered to be very important to share the information about how to install, how to setup, how to manage, how to patch and how to fix to work FreeBSD correctly with those machines. In this session, I am going to talk about how to install FreeBSD to MicroModularServer and how to manage and control those servers. To install FreeBSD to High Density Servers including NEC MicroModularServer or  HP Moonshot, you need another skill compared to install to common PCs and rack mount servers. This kind of servers (low energy consumption, low computing power and high space efficient) are good for too many edge servers/web servers at limited rack space, for example, as an alternative system for Blade servers or many cores servers like Sun Fire T1000/T2000. </abstract>
+        <description>Nowadays, FreeBSD is widely used as critical technologies software from data centers, storage servers, edge servers, feature-rich network appliances, embedded devices, home electric appliances, game consoles to various other places. In these circumstances, High Performance Computing and High Density Servers including OpenStack and Hadoop remain low compared to the other places as FreeBSD platform. One of the main reasons for such circumstances is the fact that no vendors support for FreeBSD and its hight-priced devices. Price of commonly-used High Density Servers are from 100 thousands dollars to 300 thousands dollars per a logic board that is too expensive for most open source developers to buy on an individual basis.
+
+NEC, one of leading provider and integrator of IT, communications, network managed services and multimodal biometric solutions, released their latest Intel&#8217;s Avoton C2750/C2730 based High Density Server &#8220;NEC Express/5800 MicroModularServer&#8221; last year. MicroModularServer could scale to 5,376 cores per a rack, 21TB memory per a rack, 86TB SSD per a rack and 3,360Gbps network traffic per a rack. That has good energy consumption, space requirements and cost merits compared to existing other similar products. To make MicroModularServer as a FreeBSD platform is a good first step to becoming more common operating system of High Density Servers. 
+
+In this session, I am going to talk about how to install FreeBSD to MicroModularServer and how to manage and control those servers. To install FreeBSD to High Density Servers including NEC MicroModularServer or  HP Moonshot, you need another skill compared to install to common PCs and rack mount servers. This kind of servers (low energy consumption, low computing power and high space efficient) are good for too many edge servers/web servers at limited rack space, for example, as an alternative system for Blade servers or many cores servers like Sun Fire T1000/T2000. </description>
+        <persons>
+          <person id="229">Daichi GOTO</person>
+        </persons>
+        <links>
+          <link href="https://www.youtube.com/watch?v=r2BoQ70bwK4&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=13">video</link>
+        </links>
+      </event>
+      <event id="552">
+        <start>15:00</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>Introducing OpenBSD&#8217;s new httpd</title>
+        <subtitle></subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>OpenBSD includes a new web server in its base system that is based on relayd and replaced nginx.</abstract>
+        <description>OpenBSD includes a brand new web server that was started just two weeks before the 5.6 release was finished. Work is in active progress and significant improvements have been done since its initial appearance. But why do we need another web server? This talk is about the history, design and implementation of the new httpd(8). About 17 years ago, OpenBSD first imported the Apache web server into its base system. It got cleaned up and improved and patched to drop privileges and to chroot itself by default. But years of struggle with the growing codebase, upstream, and the inacceptable disaster of Apache 2 left OpenBSD with an unintended fork of the ageing Apache 1.3.29 for many years. When nginx came up, it promised a much better alternative of a popular, modern web server with a suitable BSD license and a superior design. It was patched to drop privileges and to chroot itself by default and eventually replaced Apache as OpenBSD&#8217;s default web server. But history repeated itself: a growing codebase, struggle with upstream and the direction of its newly formed commercial entity created a discontent among many developers. Until one day at OpenBSD&#8217;s g2k14 Hackathon in Slovenia, I experimented with relayd and turned it into a simple web server. A chain of events that were supported by Bob Beck and Theo de Raadt turned it into a serious project that eventually replaced nginx as the new default. It was quickly adopted by many users: &#8221;OpenBSD httpd&#8221; was born, a simple and secure web server for static files, FastCGI and LibreSSL-powered TLS. And, of course, &#8221;httpd is web scale&#8221;.</description>
+        <persons>
+          <person id="227">Reyk Floeter</person>
+        </persons>
+        <links>
+          <link href="http://bsd.plumbing/">BSD plumbing (OpenBSD relayd | httpd)</link>
+          <link href="https://www.youtube.com/watch?v=DV1-EfdIp8I&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=18">video - 1/2</link>
+          <link href="https://www.youtube.com/watch?v=_v0lI6qDWFs&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=19">video - 2/2</link>
+        </links>
+      </event>
+      <event id="574">
+        <start>16:15</start>
+        <duration>01:00</duration>
+        <room>DMS 1140</room>
+        <slug></slug>
+        <title>Jetpack, a container runtime for FreeBSD</title>
+        <subtitle>Breaking the Linux/Docker Monoculture</subtitle>
+        <track>Hacking</track>
+        <type>lecture</type>
+        <language>en</language>
+        <abstract>Jetpack brings application containers, popularized by Docker on Linux, to FreeBSD</abstract>
+        <description>Application containers are a new approach to virtualization, popularized in last two years by Docker - a Linux implementation that all but monopolized the market. Jetpack is an application container runtime for FreeBSD that implements the App Container Specification using jails and ZFS. I will speak about how the container paradigm is different from the existing jail management solutions, how Jetpack fits into the general landscape of container runtimes, and about Jetpack's inner workings and implementation challenges. A quick demo is not unlikely.</description>
+        <persons>
+          <person id="261">Maciej Pasternacki</person>
+        </persons>
+        <links>
+          <link href="https://github.com/3ofcoins/jetpack/">Jetpack project home</link>
+          <link href="https://github.com/appc/spec">App Container Specification</link>
+          <link href="https://www.youtube.com/watch?v=8phbsAhJ-9w&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=20">video - 1/2</link>
+          <link href="https://www.youtube.com/watch?v=kJ74mgkzLxc&amp;list=PLWW0CjV-TafY0NqFDvD4k31CtnX-CGn8f&amp;index=21">video - 2/2</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 1130 - FreeBSD Dev Track">
+    </room>
+    <room name="DMS Lobby">
+      <event id="646">
+        <start>09:15</start>
+        <duration>01:00</duration>
+        <room>DMS Lobby</room>
+        <slug></slug>
+        <title>Tea, coffee, snacks from 9:15</title>
+        <subtitle>nom nom nom</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Get your lunch and head into your favourite BoF session.</abstract>
+        <description>Lots of BoFs, get in early.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="643">
+        <start>12:30</start>
+        <duration>01:00</duration>
+        <room>DMS Lobby</room>
+        <slug></slug>
+        <title>Lunch</title>
+        <subtitle>nom nom nom</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Get your lunch and head into your favourite BoF session.</abstract>
+        <description>Lots of BoFs, get in early.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+      <event id="647">
+        <start>14:30</start>
+        <duration>00:30</duration>
+        <room>DMS Lobby</room>
+        <slug></slug>
+        <title>Tea, coffee, snacks</title>
+        <subtitle>nom nom nom</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Get your lunch and head into your favourite BoF session.</abstract>
+        <description>Lots of BoFs, get in early.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="Royal Oak">
+    </room>
+    <room name="L140">
+    </room>
+    <room name="Key signing room">
+    </room>
+    <room name="STN 202">
+      <event id="604">
+        <start>21:00</start>
+        <duration>04:00</duration>
+        <room>STN 202</room>
+        <slug></slug>
+        <title>Hacker Lounge</title>
+        <subtitle>Different room tonight: Stanton, next door</subtitle>
+        <track>Hacking</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Tonight, we are in a different room: Stanton 202.  Bring your laptop, enjoy.
+
+This room is located just past the lobby, but you need to turn left and upstairs. Ask at the residence desk in the lobby for directions.</abstract>
+        <description>Proper behaviour is expected, or you'll be asked to leave.  :)  If you must ask what proper behaviour is, well, it sounds like you shouldn't be there.
+
+The starting time is flexible, so is the ending time.  Just show up.  wifi will be available.
+
+In order to play nicely with others, please bring an extension cord / power strip.
+
+Please keep this room tidy and clean.</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 3105">
+    </room>
+    <room name="Doc Sprint 2">
+    </room>
+    <room name="Lowertown Brewery">
+      <event id="618">
+        <start>18:30</start>
+        <duration>04:00</duration>
+        <room>Lowertown Brewery</room>
+        <slug>gathering</slug>
+        <title>Lowertown Brewery</title>
+        <subtitle>Closing Social Event</subtitle>
+        <track>Social</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>We have a major social gathering schedule for Saturday night after the talks. You must pay for this event during your registration.  Cost $30.
+
+Lowertown Brewery is in the Market area of Ottawa, about a 15 minute walk from the conference venue.  We will have exclusive use of the venue.
+
+There will be a cash bar.  Local beer brewed by the venue is available.
+
+Everything starts at 6:30pm with the main meal at 7:45pm.  There will be lots of food available before the meal.  You won't go hungry.</abstract>
+        <description>The evening will start with snacks &amp; mini-sandwiches circulated by wandering staff, while you mingle.  But don't fill up on that!  There is lots of food to follow.
+
+Snacks:
+
+* Maple Candied Bacon with Peanuts
+* Smoked Chicken Wings
+* Smoked-Butter Popcorn
+* Spiced Beer Nuts
+* Pickled-Deviled Eggs
+
+Mini-sandwiches:
+
+* Greenbelt, smoked tomatoes, white bean hummus, cucumber, pickled onion
+* Slow -Roasted Pork, tapenade, roasted peppers
+* Roast Turkey, peanut candied bacon, cranberry jam, tomato
+* Pulled chicken, dried cranberries, toasted almonds, scallions, mayo
+* Hot -Smoked salmon, dill cream, fried capers, pickled onion
+
+Also available at various stations will be:
+
+* veggie platters
+* cheese
+* sliced fruit 
+
+The main meal will be family-style.  The following dishes will be at each table:
+
+* Kale Salad, lemon shallot, tomatoes, seeds
+* Picnic Coleslaw
+* Barley Salad, Smoked Tomato Dressing, Cucumbers, Olives, Pickled Onions
+* Smoked Meat Platters: brisket, smoked meat, porchetta
+* Hot-smoked Cauliflower, saffron aioli, pumpkin seeds, arugula
+* Seasonal Local Vegetables
+* Roasted New Potatoes, Rosemary, Garlic
+* Warmed Artisan Bread and Whipped Garlic Butter
+
+</description>
+        <persons>
+          <person id="1">Dan Langille</person>
+        </persons>
+        <links>
+          <link href="http://www.lowertownbrewery.ca/">Lowetown Brewery website</link>
+          <link href="https://www.google.com/maps/d/u/0/viewer?mid=z32riBoY2G1E.kogFoWtYOG-k">Official Conference Map (includes Lowertown Brewery location)</link>
+        </links>
+      </event>
+    </room>
+    <room name="UC 206">
+      <event id="611">
+        <start>12:30</start>
+        <duration>02:00</duration>
+        <room>UC 206</room>
+        <slug>bsda1</slug>
+        <title>BSDA</title>
+        <subtitle>BSD Certification</subtitle>
+        <track>Certification</track>
+        <type>other</type>
+        <language>en</language>
+        <abstract>Take the BSDA certification.</abstract>
+        <description>The BSD Certification Group Inc. is a non-profit organization committed to creating and maintaining a global certification standard for system administration on BSD based operating systems.
+
+YOU MUST register and pay for this event.  See the link for details.</description>
+        <persons>
+          <person id="10">Dru Lavigne</person>
+        </persons>
+        <links>
+          <link href="https://register.bsdcertification.org/step-2-select-an-exam-event-or-testing-center">Register here</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 4165">
+    </room>
+  </day>
+  <day date="2015-06-14" index="6">
+    <room name="DMS 1160">
+    </room>
+    <room name="DMS 1110">
+    </room>
+    <room name="DMS 1120">
+    </room>
+    <room name="DMS 1140">
+    </room>
+    <room name="DMS 1130 - FreeBSD Dev Track">
+    </room>
+    <room name="DMS Lobby">
+    </room>
+    <room name="Royal Oak">
+    </room>
+    <room name="L140">
+    </room>
+    <room name="Key signing room">
+    </room>
+    <room name="STN 202">
+    </room>
+    <room name="DMS 3105">
+    </room>
+    <room name="Doc Sprint 2">
+    </room>
+    <room name="Lowertown Brewery">
+    </room>
+    <room name="UC 206">
+      <event id="547">
+        <start>10:00</start>
+        <duration>04:00</duration>
+        <room>UC 206</room>
+        <slug></slug>
+        <title>BSD Professional Lab Exam (beta)</title>
+        <subtitle>2nd of 2 sessions</subtitle>
+        <track>Certification</track>
+        <type>workshop</type>
+        <language>en</language>
+        <abstract>The BSD Certification Group will hold two sessions for the BSD Professional Lab Exam (beta) at BSDCan 2015.  Session 1 will be on Thursday, June 11 from 2:00pm - 6:00pm. Session 2 will be on Sunday, June 14, from 10:00am - 2:00pm.  The exam consists of a hands-on set of activities for configuring BSD systems according to the BSD Professional Certification Exam Objectives (http://www.bsdcertification.org/downloads/certreq-bsdp-en.pdf).
+
+*There is a cost associated with the exam which is not part of the BSDCan registration.*  Check the BSD Certification Group Registration Site at https://register.bsdcertification.org for details.</abstract>
+        <description>The BSD Professional (BSDP) certification is an advanced level, psychometrically valid certification for BSD system administrators offered by the BSD Certification Group (BSDCG). The requirements for the BSDP examination were developed with active input from the BSD community, system administrators, and organizations that use BSD systems in their IT infrastructure.  
+
+Following on the successful launch of the beta version of the BSDP Lab Exam at BSDCan 2014, the BSDCG will provide two Lab Exam opportunities at BSDCan 2015.  Both sessions are 4 hours in length and will require the candidate to actively configure 3 BSD virtual systems according to specifications in the Lab Exam booklet.  At the conclusion of the exam, each candidate will receive a score report.
+
+For additional details and to register for the exam, please visit the BSDCG registration site at https://register.bsdcertification.org.
+
+</description>
+        <persons>
+          <person id="278">Jim Brown</person>
+        </persons>
+        <links>
+          <link href="https://register.bsdcertification.org">Registration Site (You must register to take the Exam.)</link>
+          <link href="http://www.bsdcertification.org">BSD Certification Group Website</link>
+        </links>
+      </event>
+    </room>
+    <room name="DMS 4165">
+    </room>
+  </day>
+</schedule>
