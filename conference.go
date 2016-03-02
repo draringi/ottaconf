@@ -25,14 +25,19 @@ type Conference struct {
 func Parse(r io.Reader) (*Conference, error) {
 	p := xml.NewDecoder(r)
 	var schedule struct {
-		Conference *Conference
-		Day        []*Day
+		XMLName xml.Name `xmll:"schedule"`
+		Conference *Conference `xml:"conference"`
+		Day        []*Day `xml:"day"`
 	}
 	err := p.Decode(&schedule)
 	if err != nil {
 		return nil, err
 	}
 	c := schedule.Conference
+	c.events = make(map[int]*Event)
+        c.people = make(map[int]*Person)
+	c.rooms = make(map[string]*Room)
+	c.days = make(map[*Date]*Day)
 	for _, d := range schedule.Day {
 		c.days[d.date] = d
 		for _, e := range d.events {
