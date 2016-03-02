@@ -25,9 +25,9 @@ type Conference struct {
 func Parse(r io.Reader) (*Conference, error) {
 	p := xml.NewDecoder(r)
 	var schedule struct {
-		XMLName xml.Name `xmll:"schedule"`
+		XMLName    xml.Name    `xmll:"schedule"`
 		Conference *Conference `xml:"conference"`
-		Day        []*Day `xml:"day"`
+		Day        []*Day      `xml:"day"`
 	}
 	err := p.Decode(&schedule)
 	if err != nil {
@@ -35,7 +35,7 @@ func Parse(r io.Reader) (*Conference, error) {
 	}
 	c := schedule.Conference
 	c.events = make(map[int]*Event)
-        c.people = make(map[int]*Person)
+	c.people = make(map[int]*Person)
 	c.rooms = make(map[string]*Room)
 	c.days = make(map[*Date]*Day)
 	for _, d := range schedule.Day {
@@ -107,4 +107,44 @@ func (c *Conference) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error 
 		return err
 	}
 	return nil
+}
+
+func (c *Conference) Title() string {
+	return c.title
+}
+
+func (c *Conference) Subtitle() string {
+	return c.subtitle
+}
+
+func (c *Conference) Venue() string {
+	return c.venue
+}
+
+func (c *Conference) City() string {
+	return c.city
+}
+
+func (c *Conference) Start() *Date {
+	return c.start
+}
+
+func (c *Conference) End() *Date {
+	return c.end
+}
+
+func (c *Conference) Length() int {
+	return c.length
+}
+
+func (c *Conference) Release() string {
+	return c.release
+}
+
+func (c *Conference) DayChange() Time {
+	return c.dayChange
+}
+
+func (c *Conference) TimeSlotDuration() Time {
+	return c.timeslotDuration
 }

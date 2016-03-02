@@ -52,8 +52,8 @@ func TestParse(t *testing.T) {
 		t.Errorf("Start date of conference fails to match.\n\tExpected 2015-06-09.\n\tFound %s.", c.start.String())
 	}
 	if c.end.String() != "2015-06-14" {
-                t.Errorf("End date of conference fails to match.\n\tExpected 2015-06-14.\n\tFound %s.", c.end.String())
-        }
+		t.Errorf("End date of conference fails to match.\n\tExpected 2015-06-14.\n\tFound %s.", c.end.String())
+	}
 	if len(c.rooms) != 14 {
 		t.Errorf("Room count for conference does not match.\n\tExpected 15\n\tFound %d", len(c.rooms))
 	}
