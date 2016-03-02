@@ -6,17 +6,21 @@ import (
 	"testing"
 )
 
-func TestEventUnmarshal(t *testing.T) {
-	data, err := ioutil.ReadFile("testdata/event.xml")
+func TestDayUnmarshal(t *testing.T) {
+	data, err := ioutil.ReadFile("testdata/day.xml")
 	if err != nil {
 		t.Fatalf("Error reading test data: %v", err)
 	}
-	e := new(Event)
-	err = xml.Unmarshal(data, e)
+	d := new(Day)
+	err = xml.Unmarshal(data, d)
 	if err != nil {
 		t.Errorf("Unable to Parse data: %v", err)
 		return
 	}
+	if len(d.events) != 1 {
+		t.Errorf("Day should have 1 Event, has %d", len(d.events))
+	}
+	e := d.events[0]
 	if e.id != 605 {
 		t.Errorf("Invalid event id. Expected 605, Found %d", e.id)
 	}

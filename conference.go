@@ -35,16 +35,17 @@ func Parse(r io.Reader) (*Conference, error) {
 	c := schedule.Conference
 	for _, d := range schedule.Day {
 		c.days[d.date] = d
-		for _, r := range d.rooms {
-			if c.rooms[r] == nil {
-				c.rooms[r] = &Room{name: r}
-			}
-		}
 		for _, e := range d.events {
 			e.day = d.date
 			c.events[e.id] = e
-			c.rooms[e.room.name].addEvent(e)
-			e.room = c.rooms[e.room.name]
+			r, ok := c.rooms[e.room.name]
+			if ok {
+				e.room = r
+			} else {
+				r = e.room
+				c.rooms[r.name] = r
+			}
+			r.addEvent(e)
 			for i, p := range e.people {
 				person, ok := c.people[p.id]
 				if ok {
