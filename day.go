@@ -2,6 +2,7 @@ package ottaconf
 
 import "encoding/xml"
 
+// Day stores information on the various days within the conference's schedule, as stored in the XML file describing the conference.
 type Day struct {
 	index        int
 	date         *Date
@@ -9,6 +10,8 @@ type Day struct {
 	events       []*Event
 }
 
+// UnmarshalXML provides an interface to unmarshal XML encoded data about a
+// day into the internal representation.
 func (d *Day) UnmarshalXML(dec *xml.Decoder, start xml.StartElement) error {
 	d.eventsByRoom = make(map[string][]*Event)
 	var data struct {
