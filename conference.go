@@ -5,6 +5,8 @@ import (
 	"io"
 )
 
+// Conference is the main structure used, storing information on the conference, as well as what version of the schedule is contained.
+// In addition, it provides indexing of events, rooms and event hosts.
 type Conference struct {
 	title            string
 	subtitle         string
@@ -22,6 +24,8 @@ type Conference struct {
 	days             map[*Date]*Day
 }
 
+// Parse parses a source for a xml description of the conference schedule, producing the internal representation, while index the
+// relevent information.
 func Parse(r io.Reader) (*Conference, error) {
 	p := xml.NewDecoder(r)
 	var schedule struct {
@@ -66,6 +70,8 @@ func Parse(r io.Reader) (*Conference, error) {
 	return c, nil
 }
 
+// UnmarshalXML provides an interface to unmarshal XML encoded data about a conference into
+// the internal representation.
 func (c *Conference) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var data struct {
 		XMLName          xml.Name `xml:"conference"`
@@ -109,42 +115,53 @@ func (c *Conference) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error 
 	return nil
 }
 
+// Title provides the official title of the conference
 func (c *Conference) Title() string {
 	return c.title
 }
 
+// Subtitle provides a short description of the conference
 func (c *Conference) Subtitle() string {
 	return c.subtitle
 }
 
+// Venue provides the general location of the conference
 func (c *Conference) Venue() string {
 	return c.venue
 }
 
+// City provides the city where the conference takes place
 func (c *Conference) City() string {
 	return c.city
 }
 
-func (c *Conference) Start() *Date {
+// StartDate provides the date of the fist event scheduled for the conference
+func (c *Conference) StartDate() *Date {
 	return c.start
 }
 
-func (c *Conference) End() *Date {
+// EndDate provides the date of the last event scheduled for the conference
+func (c *Conference) EndDate() *Date {
 	return c.end
 }
 
+// Length provides the number of days scheduled the conference spans
 func (c *Conference) Length() int {
 	return c.length
 }
 
+// Release provides the schedule version in use
 func (c *Conference) Release() string {
 	return c.release
 }
 
+// DayChange provides the time of day the schedule considers the date to change
 func (c *Conference) DayChange() Time {
 	return c.dayChange
 }
 
+// TimeSlotDuration provides the smallest unit in time used to measure the duration
+// and time between events
 func (c *Conference) TimeSlotDuration() Time {
 	return c.timeslotDuration
 }

@@ -31,7 +31,7 @@ func TestDayUnmarshal(t *testing.T) {
 		t.Errorf("Event subtitle should be empty. Has length %d", len(e.subtitle))
 	}
 	if len(e.people) != 3 {
-		t.Errorf("Event should have 3 people assigned.", len(e.people))
+		t.Errorf("Event should have 3 people assigned, has %d", len(e.people))
 	}
 	if len(e.links) != 2 {
 		t.Errorf("Event should have 2 links, has %d", len(e.links))

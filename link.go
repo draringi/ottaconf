@@ -20,3 +20,11 @@ func (l *Link) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	l.text = data.Text
 	return nil
 }
+
+func (l *Link) URL() string {
+	return l.url
+}
+
+func (l *Link) Description() string {
+	return l.text
+}

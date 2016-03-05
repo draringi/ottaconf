@@ -36,7 +36,7 @@ func TestParse(t *testing.T) {
 	defer f.Close()
 	c, err := Parse(f)
 	if err != nil {
-		t.Errorf("Unable to parse conference", err)
+		t.Errorf("Unable to parse conference: %v", err)
 	}
 	if c == nil {
 		t.Error("No Conference found")

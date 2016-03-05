@@ -2,6 +2,7 @@ package ottaconf
 
 import "encoding/xml"
 
+// Event describes the individual events occuring at the conference
 type Event struct {
 	id          int
 	room        *Room
@@ -20,6 +21,7 @@ type Event struct {
 	links       []*Link
 }
 
+// UnmarshalXML provides the interface
 func (e *Event) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var data struct {
 		XMLName     xml.Name  `xml:"event"`

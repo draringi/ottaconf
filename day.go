@@ -10,6 +10,7 @@ type Day struct {
 }
 
 func (d *Day) UnmarshalXML(dec *xml.Decoder, start xml.StartElement) error {
+	d.eventsByRoom = make(map[string][]*Event)
 	var data struct {
 		Index  int      `xml:"index,attr"`
 		Date   string   `xml:"date,attr"`
@@ -25,5 +26,17 @@ func (d *Day) UnmarshalXML(dec *xml.Decoder, start xml.StartElement) error {
 		return err
 	}
 	d.events = data.Events
+	for _, e := range d.events {
+		r := e.room.name
+		eList := append(d.eventsByRoom[r], e)
+		d.eventsByRoom[r] = eList
+	}
 	return nil
+}
+
+// Events provides a list of the day's events.
+func (d *Day) Events() []*Event {
+	retValue := make([]*Event, len(d.events))
+	copy(d.events, retValue)
+	return retValue
 }
