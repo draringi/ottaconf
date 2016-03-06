@@ -1,3 +1,9 @@
+/*lsevents is a simple tool for listing all events at a conference.
+It uses ottaconf to parse an xml file, either located on the local machine,
+or on a website.
+The idea originates from the early lists of events that BSDCan puts out, and
+the list of events and talkers on the back of the BSDCan shirt.
+*/
 package main
 
 import (

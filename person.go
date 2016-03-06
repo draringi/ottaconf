@@ -24,14 +24,14 @@ func (p *Person) String() string {
 func (p *Person) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var data struct {
 		XMLName xml.Name `xml:"person"`
-		Id      int      `xml:"id,attr"`
+		ID      int      `xml:"id,attr"`
 		Name    string   `xml:",chardata"`
 	}
 	err := d.DecodeElement(&data, &start)
 	if err != nil {
 		return err
 	}
-	p.id = data.Id
+	p.id = data.ID
 	p.name = data.Name
 	return nil
 }

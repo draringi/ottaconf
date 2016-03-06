@@ -25,7 +25,7 @@ type Event struct {
 func (e *Event) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var data struct {
 		XMLName     xml.Name  `xml:"event"`
-		Id          int       `xml:"id,attr"`
+		ID          int       `xml:"id,attr"`
 		Room        string    `xml:"room"`
 		Start       string    `xml:"start"`
 		Duration    string    `xml:"duration"`
@@ -44,7 +44,7 @@ func (e *Event) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	if err != nil {
 		return err
 	}
-	e.id = data.Id
+	e.id = data.ID
 	e.room = &Room{name: data.Room}
 	e.start, err = AtoTime(data.Start)
 	if err != nil {

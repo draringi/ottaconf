@@ -19,7 +19,7 @@ func (d *Date) String() string {
 	return fmt.Sprintf("%0.4d-%0.2d-%0.2d", d.year, d.month, d.day)
 }
 
-// Atodate converts a string in YYYY-MM-DD format to the internal representation of a date.
+// AtoDate converts a string in YYYY-MM-DD format to the internal representation of a date.
 func AtoDate(str string) (*Date, error) {
 	d, ok := datemap[str]
 	if ok {
