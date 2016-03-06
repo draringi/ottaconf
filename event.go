@@ -58,6 +58,7 @@ func (e *Event) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	e.title = data.Title
 	e.subtitle = data.Subtitle
 	e.track = data.Track
+	e.eventType = data.Type
 	e.language = data.Language
 	e.abstract = data.Abstract
 	e.description = data.Description
