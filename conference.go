@@ -2,6 +2,7 @@ package ottaconf
 
 import (
 	"encoding/xml"
+	"errors"
 	"io"
 )
 
@@ -164,4 +165,25 @@ func (c *Conference) DayChange() Time {
 // and time between events
 func (c *Conference) TimeSlotDuration() Time {
 	return c.timeslotDuration
+}
+
+// Events returns a list of all events occuring at the conference
+func (c *Conference) Events() []*Event {
+	eventList := make([]*Event, len(c.events))
+	var i int
+	for _, e := range c.events {
+		eventList[i] = e
+		i++
+	}
+	return eventList
+}
+
+// EventByID returns the event identified by the provided event, or an error if no event is associated with the
+// provided id.
+func (c *Conference) EventByID(id int) (*Event, error) {
+	e, ok := c.events[id]
+	if ok {
+		return e, nil
+	}
+	return nil, errors.New("No such event")
 }
