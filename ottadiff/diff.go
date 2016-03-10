@@ -15,6 +15,14 @@ type Change interface {
 	String() string
 }
 
-func Diff(oldSchedule, newSchedule *ottaconf.Conference) []*Change {
-
+func Diff(oldSchedule, newSchedule *ottaconf.Conference) []Change {
+	changes := []Change{diffConferenceMeta(oldSchedule, newSchedule)}
+	for _, e := range newSchedule.Events() {
+		change := checkEvent(e, oldSchedule)
+		if change != nil {
+			changes = append(changes, change)
+		}
+	}
+	// TODO: Add more diffing
+	return changes
 }
