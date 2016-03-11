@@ -29,7 +29,7 @@ func diffConferenceMeta(c1, c2 *ottaconf.Conference) *conferenceChange {
 	if c1.Title() != c2.Title() {
 		c.changes = append(c.changes, fmt.Sprintf("Title: %v -> %v", c1.Title(), c2.Title()))
 	}
-	if c1.Subtitle() != c2.Title() {
+	if c1.Subtitle() != c2.Subtitle() {
 		c.changes = append(c.changes, fmt.Sprintf("Subtitle: %v -> %v", c1.Subtitle(), c2.Subtitle()))
 	}
 	if c1.Venue() != c2.Venue() {

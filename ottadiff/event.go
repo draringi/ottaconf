@@ -56,13 +56,14 @@ func checkEvent(e2 *ottaconf.Event, c *ottaconf.Conference) *eventChange {
 func eventDiff(e1, e2 *ottaconf.Event) *eventChange {
 	e := new(eventChange)
 	e.changeType = Modification
+	e.name = e1.Title()
 	if e1.Title() != e2.Title() {
 		e.changes = append(e.changes, fmt.Sprintf("Title: %v -> %v", e1.Title(), e2.Title()))
 	}
-	if e1.Subtitle() != e2.Title() {
+	if e1.Subtitle() != e2.Subtitle() {
 		e.changes = append(e.changes, fmt.Sprintf("Subtitle: %v -> %v", e1.Subtitle(), e2.Subtitle()))
 	}
-	if e1.Room() != e2.Room() {
+	if e1.Room().Name() != e2.Room().Name() {
 		e.changes = append(e.changes, fmt.Sprintf("Room: %v -> %v", e1.Room(), e2.Room()))
 	}
 	if e1.Date() != e2.Date() {
